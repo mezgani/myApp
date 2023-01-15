@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "private": "true",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@hotwired/stimulus": "^3.2.1",
+    "@hotwired/turbo-rails": "^7.2.4",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "esbuild": "^0.16.16",
+    "react": "^18.2.0",
+    "react-blink-text": "^1.0.5",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-fontawesome": "^1.7.1",
+    "react-router-dom": "^6.6.1",
+    "sass": "^1.57.1",
+    "styled-components": "^5.3.6"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
+    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+  }
+}
