@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users
+  namespace :admin do
+      resources :recipes
+
+      root to: "recipes#index"
+    end
   namespace :api do
     namespace :v1 do
       get 'recipes/index'

@@ -22,7 +22,7 @@ const NewRecipe = () => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-    const url = "/api/v1/recipes/create";
+    const url = "http://localhost:5000/api/v1/recipes/create";
 
     if (name.length == 0 || ingredients.length == 0 || instruction.length == 0)
       return;
