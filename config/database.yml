@@ -19,7 +19,7 @@ default: &default
 
 development:
   <<: *default
-  database: rails_react_recipe_development
+  database: myApp 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

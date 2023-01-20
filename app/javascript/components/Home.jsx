@@ -77,6 +77,22 @@ function Home() {
     </NavDropdown>
     */}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </Nav>
               </Navbar.Collapse>
               <Navbar.Collapse className="justify-content-end">

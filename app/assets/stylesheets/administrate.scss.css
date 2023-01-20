@@ -1,0 +1,21 @@
+
+.body { 
+	font-family: optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+    font-size: 13;
+}
+
+
+.main-content {
+    font-family: optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+    font-size: 14;
+}
+.main-content__page-title {
+    font-family: optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+
+}
+
+.main-content__body main-content__body--flush {
+    font-family: optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    font-size: 14;
+}
+

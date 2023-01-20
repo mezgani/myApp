@@ -1154,7 +1154,7 @@
             var newElement = ReactElement(oldElement.type, newKey, oldElement.ref, oldElement._self, oldElement._source, oldElement._owner, oldElement.props);
             return newElement;
           }
-          function cloneElement4(element, config, children) {
+          function cloneElement5(element, config, children) {
             if (element === null || element === void 0) {
               throw new Error("React.cloneElement(...): The argument must be a React element, but you passed " + element + ".");
             }
@@ -1668,11 +1668,11 @@
             var dispatcher = resolveDispatcher();
             return dispatcher.useReducer(reducer, initialArg, init);
           }
-          function useRef12(initialValue) {
+          function useRef13(initialValue) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useRef(initialValue);
           }
-          function useEffect22(create, deps) {
+          function useEffect23(create, deps) {
             var dispatcher = resolveDispatcher();
             return dispatcher.useEffect(create, deps);
           }
@@ -1702,7 +1702,7 @@
               return dispatcher.useDebugValue(value, formatterFn);
             }
           }
-          function useTransition() {
+          function useTransition2() {
             var dispatcher = resolveDispatcher();
             return dispatcher.useTransition();
           }
@@ -2224,7 +2224,7 @@
             return validatedFactory;
           }
           function cloneElementWithValidation(element, props, children) {
-            var newElement = cloneElement4.apply(this, arguments);
+            var newElement = cloneElement5.apply(this, arguments);
             for (var i = 2; i < arguments.length; i++) {
               validateChildKeys(arguments[i], newElement.type);
             }
@@ -2454,17 +2454,17 @@
           exports.useContext = useContext13;
           exports.useDebugValue = useDebugValue2;
           exports.useDeferredValue = useDeferredValue;
-          exports.useEffect = useEffect22;
+          exports.useEffect = useEffect23;
           exports.useId = useId;
           exports.useImperativeHandle = useImperativeHandle2;
           exports.useInsertionEffect = useInsertionEffect;
           exports.useLayoutEffect = useLayoutEffect5;
           exports.useMemo = useMemo9;
           exports.useReducer = useReducer2;
-          exports.useRef = useRef12;
+          exports.useRef = useRef13;
           exports.useState = useState19;
           exports.useSyncExternalStore = useSyncExternalStore2;
-          exports.useTransition = useTransition;
+          exports.useTransition = useTransition2;
           exports.version = ReactVersion;
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
@@ -2958,9 +2958,9 @@
           if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
             __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
           }
-          var React54 = require_react();
+          var React55 = require_react();
           var Scheduler = require_scheduler();
-          var ReactSharedInternals = React54.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React55.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           var suppressWarning = false;
           function setSuppressWarning(newSuppressWarning) {
             {
@@ -4565,7 +4565,7 @@
             {
               if (props.value == null) {
                 if (typeof props.children === "object" && props.children !== null) {
-                  React54.Children.forEach(props.children, function(child) {
+                  React55.Children.forEach(props.children, function(child) {
                     if (child == null) {
                       return;
                     }
@@ -13012,7 +13012,7 @@
             }
           }
           var fakeInternalInstance = {};
-          var emptyRefsObject = new React54.Component().refs;
+          var emptyRefsObject = new React55.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -24175,7 +24175,7 @@
       if (true) {
         (function() {
           "use strict";
-          var React54 = require_react();
+          var React55 = require_react();
           var REACT_ELEMENT_TYPE = Symbol.for("react.element");
           var REACT_PORTAL_TYPE = Symbol.for("react.portal");
           var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
@@ -24201,7 +24201,7 @@
             }
             return null;
           }
-          var ReactSharedInternals = React54.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React55.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function error2(format2) {
             {
               {
@@ -37770,14 +37770,14 @@
   defineJQueryPlugin(Toast);
 
   // app/javascript/components/index.jsx
-  var import_react55 = __toESM(require_react());
+  var import_react56 = __toESM(require_react());
   var import_client = __toESM(require_client());
 
   // app/javascript/components/App.jsx
-  var import_react54 = __toESM(require_react());
+  var import_react55 = __toESM(require_react());
 
   // app/javascript/routes/index.jsx
-  var import_react53 = __toESM(require_react());
+  var import_react54 = __toESM(require_react());
 
   // node_modules/react-router-dom/dist/index.js
   var React2 = __toESM(require_react());
@@ -39477,7 +39477,7 @@
   }
 
   // app/javascript/components/Home.jsx
-  var import_react42 = __toESM(require_react());
+  var import_react43 = __toESM(require_react());
 
   // node_modules/@babel/runtime/helpers/esm/extends.js
   function _extends4() {
@@ -41256,8 +41256,8 @@
   }
 
   // node_modules/@restart/ui/esm/Modal.js
-  var import_react30 = __toESM(require_react());
-  var React24 = __toESM(require_react());
+  var import_react31 = __toESM(require_react());
+  var React25 = __toESM(require_react());
   var import_react_dom3 = __toESM(require_react_dom());
 
   // node_modules/@restart/ui/esm/getScrollbarWidth.js
@@ -41387,11 +41387,78 @@
     return resolvedRef;
   }
 
-  // node_modules/@restart/ui/esm/Modal.js
+  // node_modules/@restart/ui/esm/ImperativeTransition.js
+  var import_react30 = __toESM(require_react());
   var import_jsx_runtime14 = __toESM(require_jsx_runtime());
+  function useTransition({
+    in: inProp,
+    onTransition,
+    initial = true
+  }) {
+    const ref = (0, import_react30.useRef)(null);
+    const isInitialRef = (0, import_react30.useRef)(true);
+    const handleTransition = useEventCallback(onTransition);
+    (0, import_react30.useEffect)(() => {
+      if (isInitialRef.current && !initial) {
+        return;
+      }
+      handleTransition({
+        in: inProp,
+        element: ref.current,
+        initial: isInitialRef.current
+      });
+    }, [inProp, initial, handleTransition]);
+    (0, import_react30.useEffect)(() => {
+      isInitialRef.current = false;
+      return () => {
+        isInitialRef.current = true;
+      };
+    }, []);
+    return ref;
+  }
+  function ImperativeTransition({
+    children,
+    in: inProp,
+    appear,
+    onExited,
+    onEntered,
+    transition
+  }) {
+    const ref = useTransition({
+      in: !!inProp,
+      initial: appear,
+      onTransition: (options) => {
+        const onFinish = () => {
+          if (options.in)
+            onEntered == null ? void 0 : onEntered(options.element, options.initial);
+          else
+            onExited == null ? void 0 : onExited(options.element);
+        };
+        Promise.resolve(transition(options)).then(onFinish);
+      }
+    });
+    const combinedRef = useMergedRefs_default(ref, children.ref);
+    return /* @__PURE__ */ (0, import_react30.cloneElement)(children, {
+      ref: combinedRef
+    });
+  }
+  function renderTransition(Component2, runTransition, props) {
+    if (Component2) {
+      return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Component2, Object.assign({}, props));
+    }
+    if (runTransition) {
+      return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(ImperativeTransition, Object.assign({}, props, {
+        transition: runTransition
+      }));
+    }
+    return props.children;
+  }
+
+  // node_modules/@restart/ui/esm/Modal.js
   var import_jsx_runtime15 = __toESM(require_jsx_runtime());
   var import_jsx_runtime16 = __toESM(require_jsx_runtime());
-  var _excluded8 = ["show", "role", "className", "style", "children", "backdrop", "keyboard", "onBackdropClick", "onEscapeKeyDown", "transition", "backdropTransition", "autoFocus", "enforceFocus", "restoreFocus", "restoreFocusOptions", "renderDialog", "renderBackdrop", "manager", "container", "onShow", "onHide", "onExit", "onExited", "onExiting", "onEnter", "onEntering", "onEntered"];
+  var import_jsx_runtime17 = __toESM(require_jsx_runtime());
+  var _excluded8 = ["show", "role", "className", "style", "children", "backdrop", "keyboard", "onBackdropClick", "onEscapeKeyDown", "transition", "runTransition", "backdropTransition", "runBackdropTransition", "autoFocus", "enforceFocus", "restoreFocus", "restoreFocusOptions", "renderDialog", "renderBackdrop", "manager", "container", "onShow", "onHide", "onExit", "onExited", "onExiting", "onEnter", "onEntering", "onEntered"];
   function _objectWithoutPropertiesLoose7(source, excluded) {
     if (source == null)
       return {};
@@ -41417,7 +41484,7 @@
   function useModalManager(provided) {
     const window2 = useWindow();
     const modalManager = provided || getManager(window2);
-    const modal = (0, import_react30.useRef)({
+    const modal = (0, import_react31.useRef)({
       dialog: null,
       backdrop: null
     });
@@ -41425,15 +41492,15 @@
       add: () => modalManager.add(modal.current),
       remove: () => modalManager.remove(modal.current),
       isTopModal: () => modalManager.isTopModal(modal.current),
-      setDialogRef: (0, import_react30.useCallback)((ref) => {
+      setDialogRef: (0, import_react31.useCallback)((ref) => {
         modal.current.dialog = ref;
       }, []),
-      setBackdropRef: (0, import_react30.useCallback)((ref) => {
+      setBackdropRef: (0, import_react31.useCallback)((ref) => {
         modal.current.backdrop = ref;
       }, [])
     });
   }
-  var Modal2 = /* @__PURE__ */ (0, import_react30.forwardRef)((_ref, ref) => {
+  var Modal2 = /* @__PURE__ */ (0, import_react31.forwardRef)((_ref, ref) => {
     let {
       show = false,
       role = "dialog",
@@ -41445,13 +41512,15 @@
       onBackdropClick,
       onEscapeKeyDown,
       transition,
+      runTransition,
       backdropTransition,
+      runBackdropTransition,
       autoFocus = true,
       enforceFocus = true,
       restoreFocus = true,
       restoreFocusOptions,
       renderDialog,
-      renderBackdrop = (props) => /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", Object.assign({}, props)),
+      renderBackdrop = (props) => /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("div", Object.assign({}, props)),
       manager: providedManager,
       container: containerRef,
       onShow,
@@ -41468,13 +41537,14 @@
     const modal = useModalManager(providedManager);
     const isMounted = useMounted();
     const prevShow = usePrevious(show);
-    const [exited, setExited] = (0, import_react30.useState)(!show);
-    const lastFocusRef = (0, import_react30.useRef)(null);
-    (0, import_react30.useImperativeHandle)(ref, () => modal, [modal]);
+    const [exited, setExited] = (0, import_react31.useState)(!show);
+    const lastFocusRef = (0, import_react31.useRef)(null);
+    const hasTransition = !!(transition || runTransition);
+    (0, import_react31.useImperativeHandle)(ref, () => modal, [modal]);
     if (canUseDOM_default && !prevShow && show) {
       lastFocusRef.current = activeElement();
     }
-    if (!transition && !show && !exited) {
+    if (!hasTransition && !show && !exited) {
       setExited(true);
     } else if (show && exited) {
       setExited(false);
@@ -41511,7 +41581,7 @@
         lastFocusRef.current = null;
       }
     });
-    (0, import_react30.useEffect)(() => {
+    (0, import_react31.useEffect)(() => {
       if (!show || !container)
         return;
       handleShow();
@@ -41521,7 +41591,7 @@
       /* should never change: */
       handleShow
     ]);
-    (0, import_react30.useEffect)(() => {
+    (0, import_react31.useEffect)(() => {
       if (!exited)
         return;
       handleHide();
@@ -41555,14 +41625,13 @@
         }
       }
     });
-    const removeFocusListenerRef = (0, import_react30.useRef)();
-    const removeKeydownListenerRef = (0, import_react30.useRef)();
+    const removeFocusListenerRef = (0, import_react31.useRef)();
+    const removeKeydownListenerRef = (0, import_react31.useRef)();
     const handleHidden = (...args) => {
       setExited(true);
       onExited == null ? void 0 : onExited(...args);
     };
-    const Transition2 = transition;
-    if (!container || !(show || Transition2 && !exited)) {
+    if (!container || !(show || hasTransition && !exited)) {
       return null;
     }
     const dialogProps = Object.assign({
@@ -41575,42 +41644,38 @@
       className,
       tabIndex: -1
     });
-    let dialog = renderDialog ? renderDialog(dialogProps) : /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", Object.assign({}, dialogProps, {
-      children: /* @__PURE__ */ React24.cloneElement(children, {
+    let dialog = renderDialog ? renderDialog(dialogProps) : /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("div", Object.assign({}, dialogProps, {
+      children: /* @__PURE__ */ React25.cloneElement(children, {
         role: "document"
       })
     }));
-    if (Transition2) {
-      dialog = /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(Transition2, {
-        appear: true,
-        unmountOnExit: true,
-        in: !!show,
-        onExit,
-        onExiting,
-        onExited: handleHidden,
-        onEnter,
-        onEntering,
-        onEntered,
-        children: dialog
-      });
-    }
+    dialog = renderTransition(transition, runTransition, {
+      unmountOnExit: true,
+      appear: true,
+      in: !!show,
+      onExit,
+      onExiting,
+      onExited: handleHidden,
+      onEnter,
+      onEntering,
+      onEntered,
+      children: dialog
+    });
     let backdropElement = null;
     if (backdrop) {
-      const BackdropTransition2 = backdropTransition;
       backdropElement = renderBackdrop({
         ref: modal.setBackdropRef,
         onClick: handleBackdropClick
       });
-      if (BackdropTransition2) {
-        backdropElement = /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(BackdropTransition2, {
-          appear: true,
-          in: !!show,
-          children: backdropElement
-        });
-      }
+      backdropElement = renderTransition(backdropTransition, runBackdropTransition, {
+        in: !!show,
+        appear: true,
+        unmountOnExit: true,
+        children: backdropElement
+      });
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(import_jsx_runtime15.Fragment, {
-      children: /* @__PURE__ */ import_react_dom3.default.createPortal(/* @__PURE__ */ (0, import_jsx_runtime16.jsxs)(import_jsx_runtime15.Fragment, {
+    return /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(import_jsx_runtime16.Fragment, {
+      children: /* @__PURE__ */ import_react_dom3.default.createPortal(/* @__PURE__ */ (0, import_jsx_runtime17.jsxs)(import_jsx_runtime16.Fragment, {
         children: [backdropElement, dialog]
       }), container)
     });
@@ -41707,8 +41772,8 @@
   var BootstrapModalManager_default = BootstrapModalManager;
 
   // node_modules/react-bootstrap/esm/ModalContext.js
-  var React25 = __toESM(require_react());
-  var ModalContext = /* @__PURE__ */ React25.createContext({
+  var React26 = __toESM(require_react());
+  var ModalContext = /* @__PURE__ */ React26.createContext({
     // eslint-disable-next-line @typescript-eslint/no-empty-function
     onHide() {
     }
@@ -41716,15 +41781,15 @@
   var ModalContext_default = ModalContext;
 
   // node_modules/react-bootstrap/esm/AbstractModalHeader.js
-  var React26 = __toESM(require_react());
-  var import_react31 = __toESM(require_react());
-  var import_jsx_runtime17 = __toESM(require_jsx_runtime());
+  var React27 = __toESM(require_react());
+  var import_react32 = __toESM(require_react());
   var import_jsx_runtime18 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime19 = __toESM(require_jsx_runtime());
   var defaultProps5 = {
     closeLabel: "Close",
     closeButton: false
   };
-  var AbstractModalHeader = /* @__PURE__ */ React26.forwardRef(({
+  var AbstractModalHeader = /* @__PURE__ */ React27.forwardRef(({
     closeLabel,
     closeVariant,
     closeButton,
@@ -41732,15 +41797,15 @@
     children,
     ...props
   }, ref) => {
-    const context3 = (0, import_react31.useContext)(ModalContext_default);
+    const context3 = (0, import_react32.useContext)(ModalContext_default);
     const handleClick = useEventCallback(() => {
       context3 == null ? void 0 : context3.onHide();
       onHide == null ? void 0 : onHide();
     });
-    return /* @__PURE__ */ (0, import_jsx_runtime18.jsxs)("div", {
+    return /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("div", {
       ref,
       ...props,
-      children: [children, closeButton && /* @__PURE__ */ (0, import_jsx_runtime17.jsx)(CloseButton_default, {
+      children: [children, closeButton && /* @__PURE__ */ (0, import_jsx_runtime18.jsx)(CloseButton_default, {
         "aria-label": closeLabel,
         variant: closeVariant,
         onClick: handleClick
@@ -41753,20 +41818,20 @@
   // node_modules/react-bootstrap/esm/Nav.js
   var import_classnames9 = __toESM(require_classnames());
   var import_all = __toESM(require_all());
-  var React28 = __toESM(require_react());
-  var import_react32 = __toESM(require_react());
+  var React29 = __toESM(require_react());
+  var import_react33 = __toESM(require_react());
 
   // node_modules/react-bootstrap/esm/NavItem.js
   var NavItem_default2 = createWithBsPrefix("nav-item");
 
   // node_modules/react-bootstrap/esm/NavLink.js
   var import_classnames8 = __toESM(require_classnames());
-  var React27 = __toESM(require_react());
-  var import_jsx_runtime19 = __toESM(require_jsx_runtime());
+  var React28 = __toESM(require_react());
+  var import_jsx_runtime20 = __toESM(require_jsx_runtime());
   var defaultProps6 = {
     disabled: false
   };
-  var NavLink2 = /* @__PURE__ */ React27.forwardRef(({
+  var NavLink2 = /* @__PURE__ */ React28.forwardRef(({
     bsPrefix,
     className,
     as: Component2 = Anchor_default,
@@ -41780,7 +41845,7 @@
       active,
       ...props
     });
-    return /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Component2, {
+    return /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(Component2, {
       ...props,
       ...navItemProps,
       ref,
@@ -41792,12 +41857,12 @@
   var NavLink_default = NavLink2;
 
   // node_modules/react-bootstrap/esm/Nav.js
-  var import_jsx_runtime20 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime21 = __toESM(require_jsx_runtime());
   var defaultProps7 = {
     justify: false,
     fill: false
   };
-  var Nav2 = /* @__PURE__ */ React28.forwardRef((uncontrolledProps, ref) => {
+  var Nav2 = /* @__PURE__ */ React29.forwardRef((uncontrolledProps, ref) => {
     const {
       as = "div",
       bsPrefix: initialBsPrefix,
@@ -41816,8 +41881,8 @@
     let navbarBsPrefix;
     let cardHeaderBsPrefix;
     let isNavbar = false;
-    const navbarContext = (0, import_react32.useContext)(NavbarContext_default);
-    const cardHeaderContext = (0, import_react32.useContext)(CardHeaderContext_default);
+    const navbarContext = (0, import_react33.useContext)(NavbarContext_default);
+    const cardHeaderContext = (0, import_react33.useContext)(CardHeaderContext_default);
     if (navbarContext) {
       navbarBsPrefix = navbarContext.bsPrefix;
       isNavbar = navbar == null ? true : navbar;
@@ -41826,7 +41891,7 @@
         cardHeaderBsPrefix
       } = cardHeaderContext);
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(Nav_default, {
+    return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Nav_default, {
       as,
       ref,
       activeKey,
@@ -41851,14 +41916,14 @@
 
   // node_modules/react-bootstrap/esm/Navbar.js
   var import_classnames15 = __toESM(require_classnames());
-  var React36 = __toESM(require_react());
-  var import_react39 = __toESM(require_react());
+  var React37 = __toESM(require_react());
+  var import_react40 = __toESM(require_react());
 
   // node_modules/react-bootstrap/esm/NavbarBrand.js
   var import_classnames10 = __toESM(require_classnames());
-  var React29 = __toESM(require_react());
-  var import_jsx_runtime21 = __toESM(require_jsx_runtime());
-  var NavbarBrand = /* @__PURE__ */ React29.forwardRef(({
+  var React30 = __toESM(require_react());
+  var import_jsx_runtime22 = __toESM(require_jsx_runtime());
+  var NavbarBrand = /* @__PURE__ */ React30.forwardRef(({
     bsPrefix,
     className,
     as,
@@ -41866,7 +41931,7 @@
   }, ref) => {
     bsPrefix = useBootstrapPrefix(bsPrefix, "navbar-brand");
     const Component2 = as || (props.href ? "a" : "span");
-    return /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Component2, {
+    return /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(Component2, {
       ...props,
       ref,
       className: (0, import_classnames10.default)(className, bsPrefix)
@@ -41876,20 +41941,20 @@
   var NavbarBrand_default = NavbarBrand;
 
   // node_modules/react-bootstrap/esm/NavbarCollapse.js
-  var React30 = __toESM(require_react());
-  var import_react33 = __toESM(require_react());
-  var import_jsx_runtime22 = __toESM(require_jsx_runtime());
-  var NavbarCollapse = /* @__PURE__ */ React30.forwardRef(({
+  var React31 = __toESM(require_react());
+  var import_react34 = __toESM(require_react());
+  var import_jsx_runtime23 = __toESM(require_jsx_runtime());
+  var NavbarCollapse = /* @__PURE__ */ React31.forwardRef(({
     children,
     bsPrefix,
     ...props
   }, ref) => {
     bsPrefix = useBootstrapPrefix(bsPrefix, "navbar-collapse");
-    const context3 = (0, import_react33.useContext)(NavbarContext_default);
-    return /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(Collapse_default, {
+    const context3 = (0, import_react34.useContext)(NavbarContext_default);
+    return /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(Collapse_default, {
       in: !!(context3 && context3.expanded),
       ...props,
-      children: /* @__PURE__ */ (0, import_jsx_runtime22.jsx)("div", {
+      children: /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("div", {
         ref,
         className: bsPrefix,
         children
@@ -41901,13 +41966,13 @@
 
   // node_modules/react-bootstrap/esm/NavbarToggle.js
   var import_classnames11 = __toESM(require_classnames());
-  var React31 = __toESM(require_react());
-  var import_react34 = __toESM(require_react());
-  var import_jsx_runtime23 = __toESM(require_jsx_runtime());
+  var React32 = __toESM(require_react());
+  var import_react35 = __toESM(require_react());
+  var import_jsx_runtime24 = __toESM(require_jsx_runtime());
   var defaultProps8 = {
     label: "Toggle navigation"
   };
-  var NavbarToggle = /* @__PURE__ */ React31.forwardRef(({
+  var NavbarToggle = /* @__PURE__ */ React32.forwardRef(({
     bsPrefix,
     className,
     children,
@@ -41921,7 +41986,7 @@
     const {
       onToggle,
       expanded
-    } = (0, import_react34.useContext)(NavbarContext_default) || {};
+    } = (0, import_react35.useContext)(NavbarContext_default) || {};
     const handleClick = useEventCallback((e) => {
       if (onClick)
         onClick(e);
@@ -41931,13 +41996,13 @@
     if (Component2 === "button") {
       props.type = "button";
     }
-    return /* @__PURE__ */ (0, import_jsx_runtime23.jsx)(Component2, {
+    return /* @__PURE__ */ (0, import_jsx_runtime24.jsx)(Component2, {
       ...props,
       ref,
       onClick: handleClick,
       "aria-label": label,
       className: (0, import_classnames11.default)(className, bsPrefix, !expanded && "collapsed"),
-      children: children || /* @__PURE__ */ (0, import_jsx_runtime23.jsx)("span", {
+      children: children || /* @__PURE__ */ (0, import_jsx_runtime24.jsx)("span", {
         className: `${bsPrefix}-icon`
       })
     });
@@ -41947,14 +42012,14 @@
   var NavbarToggle_default = NavbarToggle;
 
   // node_modules/react-bootstrap/esm/NavbarOffcanvas.js
-  var React35 = __toESM(require_react());
-  var import_react38 = __toESM(require_react());
+  var React36 = __toESM(require_react());
+  var import_react39 = __toESM(require_react());
 
   // node_modules/react-bootstrap/esm/Offcanvas.js
   var import_classnames14 = __toESM(require_classnames());
 
   // node_modules/@restart/hooks/esm/useMediaQuery.js
-  var import_react35 = __toESM(require_react());
+  var import_react36 = __toESM(require_react());
   var matchersByWindow = /* @__PURE__ */ new WeakMap();
   var getMatcher = function getMatcher2(query, targetWindow) {
     if (!query || !targetWindow)
@@ -41974,7 +42039,7 @@
       targetWindow = typeof window === "undefined" ? void 0 : window;
     }
     var mql = getMatcher(query, targetWindow);
-    var _useState = (0, import_react35.useState)(function() {
+    var _useState = (0, import_react36.useState)(function() {
       return mql ? mql.matches : false;
     }), matches = _useState[0], setMatches = _useState[1];
     useIsomorphicEffect_default(function() {
@@ -42002,7 +42067,7 @@
   }
 
   // node_modules/@restart/hooks/esm/useBreakpoint.js
-  var import_react36 = __toESM(require_react());
+  var import_react37 = __toESM(require_react());
   function createBreakpointHook(breakpointValues) {
     var names = Object.keys(breakpointValues);
     function and(query, next) {
@@ -42041,7 +42106,7 @@
         direction = direction || true;
         breakpointMap = (_breakpointMap = {}, _breakpointMap[breakpointOrMap] = direction, _breakpointMap);
       }
-      var query = (0, import_react36.useMemo)(function() {
+      var query = (0, import_react37.useMemo)(function() {
         return Object.entries(breakpointMap).reduce(function(query2, _ref) {
           var key = _ref[0], direction2 = _ref[1];
           if (direction2 === "up" || direction2 === true) {
@@ -42068,16 +42133,16 @@
   var useBreakpoint_default = useBreakpoint;
 
   // node_modules/react-bootstrap/esm/Offcanvas.js
-  var React34 = __toESM(require_react());
-  var import_react37 = __toESM(require_react());
+  var React35 = __toESM(require_react());
+  var import_react38 = __toESM(require_react());
 
   // node_modules/react-bootstrap/esm/OffcanvasBody.js
   var OffcanvasBody_default = createWithBsPrefix("offcanvas-body");
 
   // node_modules/react-bootstrap/esm/OffcanvasToggling.js
   var import_classnames12 = __toESM(require_classnames());
-  var React32 = __toESM(require_react());
-  var import_jsx_runtime24 = __toESM(require_jsx_runtime());
+  var React33 = __toESM(require_react());
+  var import_jsx_runtime25 = __toESM(require_jsx_runtime());
   var defaultProps9 = {
     in: false,
     mountOnEnter: false,
@@ -42088,19 +42153,19 @@
     [ENTERING]: "show",
     [ENTERED]: "show"
   };
-  var OffcanvasToggling = /* @__PURE__ */ React32.forwardRef(({
+  var OffcanvasToggling = /* @__PURE__ */ React33.forwardRef(({
     bsPrefix,
     className,
     children,
     ...props
   }, ref) => {
     bsPrefix = useBootstrapPrefix(bsPrefix, "offcanvas");
-    return /* @__PURE__ */ (0, import_jsx_runtime24.jsx)(TransitionWrapper_default, {
+    return /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(TransitionWrapper_default, {
       ref,
       addEndListener: transitionEndListener,
       ...props,
       childRef: children.ref,
-      children: (status, innerProps) => /* @__PURE__ */ React32.cloneElement(children, {
+      children: (status, innerProps) => /* @__PURE__ */ React33.cloneElement(children, {
         ...innerProps,
         className: (0, import_classnames12.default)(className, children.props.className, (status === ENTERING || status === EXITING) && `${bsPrefix}-toggling`, transitionStyles[status])
       })
@@ -42112,19 +42177,19 @@
 
   // node_modules/react-bootstrap/esm/OffcanvasHeader.js
   var import_classnames13 = __toESM(require_classnames());
-  var React33 = __toESM(require_react());
-  var import_jsx_runtime25 = __toESM(require_jsx_runtime());
+  var React34 = __toESM(require_react());
+  var import_jsx_runtime26 = __toESM(require_jsx_runtime());
   var defaultProps10 = {
     closeLabel: "Close",
     closeButton: false
   };
-  var OffcanvasHeader = /* @__PURE__ */ React33.forwardRef(({
+  var OffcanvasHeader = /* @__PURE__ */ React34.forwardRef(({
     bsPrefix,
     className,
     ...props
   }, ref) => {
     bsPrefix = useBootstrapPrefix(bsPrefix, "offcanvas-header");
-    return /* @__PURE__ */ (0, import_jsx_runtime25.jsx)(AbstractModalHeader_default, {
+    return /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(AbstractModalHeader_default, {
       ref,
       ...props,
       className: (0, import_classnames13.default)(className, bsPrefix)
@@ -42141,9 +42206,9 @@
   });
 
   // node_modules/react-bootstrap/esm/Offcanvas.js
-  var import_jsx_runtime26 = __toESM(require_jsx_runtime());
   var import_jsx_runtime27 = __toESM(require_jsx_runtime());
   var import_jsx_runtime28 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime29 = __toESM(require_jsx_runtime());
   var defaultProps11 = {
     show: false,
     backdrop: true,
@@ -42156,16 +42221,16 @@
     renderStaticNode: false
   };
   function DialogTransition(props) {
-    return /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(OffcanvasToggling_default, {
+    return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(OffcanvasToggling_default, {
       ...props
     });
   }
   function BackdropTransition(props) {
-    return /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(Fade_default, {
+    return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Fade_default, {
       ...props
     });
   }
-  var Offcanvas2 = /* @__PURE__ */ React34.forwardRef(({
+  var Offcanvas2 = /* @__PURE__ */ React35.forwardRef(({
     bsPrefix,
     className,
     children,
@@ -42196,21 +42261,21 @@
     renderStaticNode,
     ...props
   }, ref) => {
-    const modalManager = (0, import_react37.useRef)();
+    const modalManager = (0, import_react38.useRef)();
     bsPrefix = useBootstrapPrefix(bsPrefix, "offcanvas");
     const {
       onToggle
-    } = (0, import_react37.useContext)(NavbarContext_default) || {};
-    const [showOffcanvas, setShowOffcanvas] = (0, import_react37.useState)(false);
+    } = (0, import_react38.useContext)(NavbarContext_default) || {};
+    const [showOffcanvas, setShowOffcanvas] = (0, import_react38.useState)(false);
     const hideResponsiveOffcanvas = useBreakpoint_default(responsive || "xs", "up");
-    (0, import_react37.useEffect)(() => {
+    (0, import_react38.useEffect)(() => {
       setShowOffcanvas(responsive ? show && !hideResponsiveOffcanvas : show);
     }, [show, responsive, hideResponsiveOffcanvas]);
     const handleHide = useEventCallback(() => {
       onToggle == null ? void 0 : onToggle();
       onHide == null ? void 0 : onHide();
     });
-    const modalContext = (0, import_react37.useMemo)(() => ({
+    const modalContext = (0, import_react38.useMemo)(() => ({
       onHide: handleHide
     }), [handleHide]);
     function getModalManager() {
@@ -42235,21 +42300,21 @@
         node.style.visibility = "";
       onExited == null ? void 0 : onExited(...args);
     };
-    const renderBackdrop = (0, import_react37.useCallback)((backdropProps) => /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", {
+    const renderBackdrop = (0, import_react38.useCallback)((backdropProps) => /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", {
       ...backdropProps,
       className: (0, import_classnames14.default)(`${bsPrefix}-backdrop`, backdropClassName)
     }), [backdropClassName, bsPrefix]);
-    const renderDialog = (dialogProps) => /* @__PURE__ */ (0, import_jsx_runtime26.jsx)("div", {
+    const renderDialog = (dialogProps) => /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", {
       ...dialogProps,
       ...props,
       className: (0, import_classnames14.default)(className, responsive ? `${bsPrefix}-${responsive}` : bsPrefix, `${bsPrefix}-${placement}`),
       "aria-labelledby": ariaLabelledby,
       children
     });
-    return /* @__PURE__ */ (0, import_jsx_runtime28.jsxs)(import_jsx_runtime27.Fragment, {
-      children: [!showOffcanvas && (responsive || renderStaticNode) && renderDialog({}), /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(ModalContext_default.Provider, {
+    return /* @__PURE__ */ (0, import_jsx_runtime29.jsxs)(import_jsx_runtime28.Fragment, {
+      children: [!showOffcanvas && (responsive || renderStaticNode) && renderDialog({}), /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(ModalContext_default.Provider, {
         value: modalContext,
-        children: /* @__PURE__ */ (0, import_jsx_runtime26.jsx)(Modal_default, {
+        children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Modal_default, {
           show: showOffcanvas,
           ref,
           backdrop,
@@ -42286,10 +42351,10 @@
   });
 
   // node_modules/react-bootstrap/esm/NavbarOffcanvas.js
-  var import_jsx_runtime29 = __toESM(require_jsx_runtime());
-  var NavbarOffcanvas = /* @__PURE__ */ React35.forwardRef((props, ref) => {
-    const context3 = (0, import_react38.useContext)(NavbarContext_default);
-    return /* @__PURE__ */ (0, import_jsx_runtime29.jsx)(Offcanvas_default, {
+  var import_jsx_runtime30 = __toESM(require_jsx_runtime());
+  var NavbarOffcanvas = /* @__PURE__ */ React36.forwardRef((props, ref) => {
+    const context3 = (0, import_react39.useContext)(NavbarContext_default);
+    return /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(Offcanvas_default, {
       ref,
       show: !!(context3 != null && context3.expanded),
       ...props,
@@ -42300,7 +42365,7 @@
   var NavbarOffcanvas_default = NavbarOffcanvas;
 
   // node_modules/react-bootstrap/esm/Navbar.js
-  var import_jsx_runtime30 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime31 = __toESM(require_jsx_runtime());
   var NavbarText = createWithBsPrefix("navbar-text", {
     Component: "span"
   });
@@ -42309,7 +42374,7 @@
     variant: "light",
     collapseOnSelect: false
   };
-  var Navbar = /* @__PURE__ */ React36.forwardRef((props, ref) => {
+  var Navbar = /* @__PURE__ */ React37.forwardRef((props, ref) => {
     const {
       bsPrefix: initialBsPrefix,
       expand,
@@ -42329,7 +42394,7 @@
       expanded: "onToggle"
     });
     const bsPrefix = useBootstrapPrefix(initialBsPrefix, "navbar");
-    const handleCollapse = (0, import_react39.useCallback)((...args) => {
+    const handleCollapse = (0, import_react40.useCallback)((...args) => {
       onSelect == null ? void 0 : onSelect(...args);
       if (collapseOnSelect && expanded) {
         onToggle == null ? void 0 : onToggle(false);
@@ -42341,17 +42406,17 @@
     let expandClass = `${bsPrefix}-expand`;
     if (typeof expand === "string")
       expandClass = `${expandClass}-${expand}`;
-    const navbarContext = (0, import_react39.useMemo)(() => ({
+    const navbarContext = (0, import_react40.useMemo)(() => ({
       onToggle: () => onToggle == null ? void 0 : onToggle(!expanded),
       bsPrefix,
       expanded: !!expanded,
       expand
     }), [bsPrefix, expanded, expand, onToggle]);
-    return /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(NavbarContext_default.Provider, {
+    return /* @__PURE__ */ (0, import_jsx_runtime31.jsx)(NavbarContext_default.Provider, {
       value: navbarContext,
-      children: /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(SelectableContext_default.Provider, {
+      children: /* @__PURE__ */ (0, import_jsx_runtime31.jsx)(SelectableContext_default.Provider, {
         value: handleCollapse,
-        children: /* @__PURE__ */ (0, import_jsx_runtime30.jsx)(Component2, {
+        children: /* @__PURE__ */ (0, import_jsx_runtime31.jsx)(Component2, {
           ref,
           ...controlledProps,
           className: (0, import_classnames15.default)(className, bsPrefix, expand && expandClass, variant && `${bsPrefix}-${variant}`, bg && `bg-${bg}`, sticky && `sticky-${sticky}`, fixed && `fixed-${fixed}`)
@@ -42371,9 +42436,9 @@
 
   // node_modules/react-bootstrap/esm/Row.js
   var import_classnames16 = __toESM(require_classnames());
-  var React37 = __toESM(require_react());
-  var import_jsx_runtime31 = __toESM(require_jsx_runtime());
-  var Row = /* @__PURE__ */ React37.forwardRef(({
+  var React38 = __toESM(require_react());
+  var import_jsx_runtime32 = __toESM(require_jsx_runtime());
+  var Row = /* @__PURE__ */ React38.forwardRef(({
     bsPrefix,
     className,
     // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
@@ -42400,7 +42465,7 @@
       if (cols != null)
         classes.push(`${sizePrefix}${infix}-${cols}`);
     });
-    return /* @__PURE__ */ (0, import_jsx_runtime31.jsx)(Component2, {
+    return /* @__PURE__ */ (0, import_jsx_runtime32.jsx)(Component2, {
       ref,
       ...props,
       className: (0, import_classnames16.default)(className, decoratedBsPrefix, ...classes)
@@ -42413,58 +42478,30 @@
   var import_react_blink_text = __toESM(require_ReactBlinkText());
 
   // app/javascript/components/Pagination.jsx
-  var import_react40 = __toESM(require_react());
+  var import_react41 = __toESM(require_react());
   var Pagination = () => {
-    const [currentPage, setCurrentPage] = (0, import_react40.useState)(1);
-    const [data, setData] = (0, import_react40.useState)([]);
-    (0, import_react40.useEffect)(() => {
+    const [currentPage, setCurrentPage] = (0, import_react41.useState)(1);
+    const [data, setData] = (0, import_react41.useState)([]);
+    (0, import_react41.useEffect)(() => {
     }, []);
     const handleClick = (newPage) => {
       setCurrentPage(newPage);
     };
-    return /* @__PURE__ */ import_react40.default.createElement("div", null, /* @__PURE__ */ import_react40.default.createElement("button", { onClick: () => handleClick(currentPage - 1), disabled: currentPage === 1 }, "Previous"), /* @__PURE__ */ import_react40.default.createElement("span", null, currentPage), /* @__PURE__ */ import_react40.default.createElement("button", { onClick: () => handleClick(currentPage + 1) }, "Next"), /* @__PURE__ */ import_react40.default.createElement("div", null, data.map((item) => {
-      return /* @__PURE__ */ import_react40.default.createElement("div", { key: item.id }, item.name);
+    return /* @__PURE__ */ import_react41.default.createElement("div", null, /* @__PURE__ */ import_react41.default.createElement("button", { onClick: () => handleClick(currentPage - 1), disabled: currentPage === 1 }, "Previous"), /* @__PURE__ */ import_react41.default.createElement("span", null, currentPage), /* @__PURE__ */ import_react41.default.createElement("button", { onClick: () => handleClick(currentPage + 1) }, "Next"), /* @__PURE__ */ import_react41.default.createElement("div", null, data.map((item) => {
+      return /* @__PURE__ */ import_react41.default.createElement("div", { key: item.id }, item.name);
     })));
   };
   var Pagination_default = Pagination;
 
   // app/javascript/components/Footer.jsx
-  var import_react41 = __toESM(require_react());
+  var import_react42 = __toESM(require_react());
   var Footer = () => {
-    return /* @__PURE__ */ import_react41.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react41.default.createElement("div", { className: "container py-6" }, /* @__PURE__ */ import_react41.default.createElement("footer", { className: "bg-dark text-dark" }, /* @__PURE__ */ import_react41.default.createElement(Row_default, null, /* @__PURE__ */ import_react41.default.createElement(Col_default, { xs: 12, md: 4, align: "right" }, /* @__PURE__ */ import_react41.default.createElement("h5", null, "About Us"), /* @__PURE__ */ import_react41.default.createElement("p", { align: "justify" }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, quam vitae convallis congue, justo nibh dictum magna, id placerat ipsum risus eu augue.")), /* @__PURE__ */ import_react41.default.createElement(Col_default, { xs: 12, md: 4, align: "right" }, /* @__PURE__ */ import_react41.default.createElement("h5", null, "Contact Us"), /* @__PURE__ */ import_react41.default.createElement("ul", { className: "list-unstyled", align: "right" }, /* @__PURE__ */ import_react41.default.createElement("li", null, "Email: info@example.com"), /* @__PURE__ */ import_react41.default.createElement("li", null, "Phone: 555-555-5555"))), /* @__PURE__ */ import_react41.default.createElement(Col_default, { xs: 12, md: 4, align: "right" }, /* @__PURE__ */ import_react41.default.createElement("h5", null, "Follow Us"), /* @__PURE__ */ import_react41.default.createElement("ul", { className: "list-inline" }, /* @__PURE__ */ import_react41.default.createElement("li", { className: "list-inline-item" }, /* @__PURE__ */ import_react41.default.createElement("a", { href: "#" }, "Facebook")), /* @__PURE__ */ import_react41.default.createElement("li", { className: "list-inline-item" }, /* @__PURE__ */ import_react41.default.createElement("a", { href: "#" }, "Twitter")), /* @__PURE__ */ import_react41.default.createElement("li", { className: "list-inline-item" }, /* @__PURE__ */ import_react41.default.createElement("a", { href: "#" }, "Instagram"))))))));
+    return /* @__PURE__ */ import_react42.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react42.default.createElement("div", { className: "container py-6" }, /* @__PURE__ */ import_react42.default.createElement("footer", { className: "bg-dark text-dark" }, /* @__PURE__ */ import_react42.default.createElement(Row_default, null, /* @__PURE__ */ import_react42.default.createElement(Col_default, { xs: 12, md: 4, align: "right" }, /* @__PURE__ */ import_react42.default.createElement("h5", null, "About Us"), /* @__PURE__ */ import_react42.default.createElement("p", { align: "justify" }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, quam vitae convallis congue, justo nibh dictum magna, id placerat ipsum risus eu augue.")), /* @__PURE__ */ import_react42.default.createElement(Col_default, { xs: 12, md: 4, align: "right" }, /* @__PURE__ */ import_react42.default.createElement("h5", null, "Contact Us"), /* @__PURE__ */ import_react42.default.createElement("ul", { className: "list-unstyled", align: "right" }, /* @__PURE__ */ import_react42.default.createElement("li", null, "Email: info@example.com"), /* @__PURE__ */ import_react42.default.createElement("li", null, "Phone: 555-555-5555"))), /* @__PURE__ */ import_react42.default.createElement(Col_default, { xs: 12, md: 4, align: "right" }, /* @__PURE__ */ import_react42.default.createElement("h5", null, "Follow Us"), /* @__PURE__ */ import_react42.default.createElement("ul", { className: "list-inline" }, /* @__PURE__ */ import_react42.default.createElement("li", { className: "list-inline-item" }, /* @__PURE__ */ import_react42.default.createElement("a", { href: "#" }, "Facebook")), /* @__PURE__ */ import_react42.default.createElement("li", { className: "list-inline-item" }, /* @__PURE__ */ import_react42.default.createElement("a", { href: "#" }, "Twitter")), /* @__PURE__ */ import_react42.default.createElement("li", { className: "list-inline-item" }, /* @__PURE__ */ import_react42.default.createElement("a", { href: "#" }, "Instagram"))))))));
   };
   var Footer_default = Footer;
 
   // app/javascript/components/Home.jsx
   function Home() {
-    const navigate = useNavigate();
-    const [recipes, setRecipes] = (0, import_react42.useState)([]);
-    (0, import_react42.useEffect)(() => {
-      const url = "/api/v1/recipes/index";
-      fetch(url).then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-        throw new Error("Network response was not ok.");
-      }).then((res) => setRecipes(res)).catch(() => navigate("/"));
-    }, []);
-    const allRecipes = recipes.map((recipe, index) => /* @__PURE__ */ import_react42.default.createElement("div", { key: index, className: "col-md-6 col-lg-4" }, /* @__PURE__ */ import_react42.default.createElement("div", { className: "card mb-4" }, /* @__PURE__ */ import_react42.default.createElement(
-      "img",
-      {
-        src: recipe.image,
-        className: "card-img-top",
-        alt: `${recipe.name} image`
-      }
-    ), /* @__PURE__ */ import_react42.default.createElement("div", { className: "card-body" }, /* @__PURE__ */ import_react42.default.createElement("h5", { className: "card-title" }, recipe.name), /* @__PURE__ */ import_react42.default.createElement(Link, { to: `/recipe/${recipe.id}`, className: "btn custom-button" }, "View details")))));
-    const noRecipe = /* @__PURE__ */ import_react42.default.createElement("div", { className: "vw-100 vh-50 d-flex align-items-center justify-content-center" }, /* @__PURE__ */ import_react42.default.createElement("h4", null, "No recipes yet. Why not ", /* @__PURE__ */ import_react42.default.createElement(Link, { to: "/new_recipe" }, "create one")));
-    return /* @__PURE__ */ import_react42.default.createElement(import_react42.default.Fragment, null, /* @__PURE__ */ import_react42.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react42.default.createElement(Container_default, null, /* @__PURE__ */ import_react42.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react42.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react42.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react42.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react42.default.createElement(Nav_default2.Link, { href: "/" }, /* @__PURE__ */ import_react42.default.createElement("b", null, "Home")), /* @__PURE__ */ import_react42.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react42.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react42.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react42.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react42.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react42.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react42.default.createElement("a", { href: "/user" }, "Mark Otto"))))), /* @__PURE__ */ import_react42.default.createElement("div", { className: "vw-100 vh-50 primary-color d-flex align-items-center justify-content-center" }, /* @__PURE__ */ import_react42.default.createElement("div", { className: "jumbotron jumbotron-fluid bg-transparent" }, /* @__PURE__ */ import_react42.default.createElement("div", { className: "container secondary-color" }, /* @__PURE__ */ import_react42.default.createElement("h1", { className: "display-9 top-buffer" }, "Food Recipes"), /* @__PURE__ */ import_react42.default.createElement("p", { className: "lead1" }, "A curated list of recipes and restaurents for the best homemade meal and delicacies."), /* @__PURE__ */ import_react42.default.createElement("br", null), /* @__PURE__ */ import_react42.default.createElement("form", null, /* @__PURE__ */ import_react42.default.createElement("div", { class: "form-group" }, /* @__PURE__ */ import_react42.default.createElement("div", { className: "mb-6", size: "lg", textBefore: "Large" }, /* @__PURE__ */ import_react42.default.createElement("input", { class: "effect-1", type: "text", placeholder: "Type the restaurent's name you search" })))), /* @__PURE__ */ import_react42.default.createElement("br", null), /* @__PURE__ */ import_react42.default.createElement("div", { align: "right" }, /* @__PURE__ */ import_react42.default.createElement(Link, { to: "/recipes", className: "btn btn-lg  custom-button d-inline-flex p-2", role: "button" }, "Search for a restaurent")), /* @__PURE__ */ import_react42.default.createElement("br", null), /* @__PURE__ */ import_react42.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react42.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react42.default.createElement("h1", { className: "display-4" }, "Recipes for every occasion"), /* @__PURE__ */ import_react42.default.createElement("p", { className: "lead2 text-muted" }, "We\u2019ve pulled together our most popular recipes, our latest additions, and our editor\u2019s picks, so there\u2019s sure to be something tempting for you to try."))), /* @__PURE__ */ import_react42.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react42.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react42.default.createElement("div", { className: "row" }, recipes.length > 0 ? allRecipes : noRecipe), /* @__PURE__ */ import_react42.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react42.default.createElement("div", { className: "pagy d-flex align-items-end justify-content-end", align: "right" }, /* @__PURE__ */ import_react42.default.createElement(Pagination_default, null))))), /* @__PURE__ */ import_react42.default.createElement(Footer_default, null)))));
-  }
-  var Home_default = Home;
-
-  // app/javascript/components/Products.jsx
-  var import_react43 = __toESM(require_react());
-  var import_react_blink_text2 = __toESM(require_ReactBlinkText());
-  var Products = () => {
     const navigate = useNavigate();
     const [recipes, setRecipes] = (0, import_react43.useState)([]);
     (0, import_react43.useEffect)(() => {
@@ -42483,25 +42520,53 @@
         className: "card-img-top",
         alt: `${recipe.name} image`
       }
-    ), /* @__PURE__ */ import_react43.default.createElement("div", { className: "card-body" }, /* @__PURE__ */ import_react43.default.createElement("h5", { className: "card-title" }, recipe.name), /* @__PURE__ */ import_react43.default.createElement(Link, { to: `/recipe/${recipe.id}`, className: "btn custom-button" }, "View Recipe")))));
+    ), /* @__PURE__ */ import_react43.default.createElement("div", { className: "card-body" }, /* @__PURE__ */ import_react43.default.createElement("h5", { className: "card-title" }, recipe.name), /* @__PURE__ */ import_react43.default.createElement(Link, { to: `/recipe/${recipe.id}`, className: "btn custom-button" }, "View details")))));
     const noRecipe = /* @__PURE__ */ import_react43.default.createElement("div", { className: "vw-100 vh-50 d-flex align-items-center justify-content-center" }, /* @__PURE__ */ import_react43.default.createElement("h4", null, "No recipes yet. Why not ", /* @__PURE__ */ import_react43.default.createElement(Link, { to: "/new_recipe" }, "create one")));
-    return /* @__PURE__ */ import_react43.default.createElement(import_react43.default.Fragment, null, /* @__PURE__ */ import_react43.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react43.default.createElement(Container_default, null, /* @__PURE__ */ import_react43.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react43.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react43.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react43.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react43.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react43.default.createElement(Nav_default2.Link, { href: "/products" }, /* @__PURE__ */ import_react43.default.createElement("b", null, "Products")), /* @__PURE__ */ import_react43.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react43.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react43.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react43.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react43.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react43.default.createElement("a", { href: "/user" }, "Mark Otto"))))), /* @__PURE__ */ import_react43.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react43.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react43.default.createElement("h1", { className: "display-4" }, "Recipes for every occasion"), /* @__PURE__ */ import_react43.default.createElement("p", { className: "lead text-muted" }, "We\u2019ve pulled together our most popular recipes, our latest additions, and our editor\u2019s picks, so there\u2019s sure to be something tempting for you to try."))), /* @__PURE__ */ import_react43.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react43.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react43.default.createElement("div", { className: "row" }, recipes.length > 0 ? allRecipes : noRecipe), /* @__PURE__ */ import_react43.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react43.default.createElement("div", { className: "pagy d-flex align-items-end justify-content-end", align: "right" }, /* @__PURE__ */ import_react43.default.createElement(Pagination_default, null))))), /* @__PURE__ */ import_react43.default.createElement(Footer_default, null));
+    return /* @__PURE__ */ import_react43.default.createElement(import_react43.default.Fragment, null, /* @__PURE__ */ import_react43.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react43.default.createElement(Container_default, null, /* @__PURE__ */ import_react43.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react43.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react43.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react43.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react43.default.createElement(Nav_default2.Link, { href: "/" }, /* @__PURE__ */ import_react43.default.createElement("b", null, "Home")), /* @__PURE__ */ import_react43.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react43.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react43.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react43.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react43.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react43.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react43.default.createElement("a", { href: "/user" }, "Mark Otto"))))), /* @__PURE__ */ import_react43.default.createElement("div", { className: "vw-100 vh-50 primary-color d-flex align-items-center justify-content-center" }, /* @__PURE__ */ import_react43.default.createElement("div", { className: "jumbotron jumbotron-fluid bg-transparent" }, /* @__PURE__ */ import_react43.default.createElement("div", { className: "container secondary-color" }, /* @__PURE__ */ import_react43.default.createElement("h1", { className: "display-9 top-buffer" }, "Food Recipes"), /* @__PURE__ */ import_react43.default.createElement("p", { className: "lead1" }, "A curated list of recipes and restaurents for the best homemade meal and delicacies."), /* @__PURE__ */ import_react43.default.createElement("br", null), /* @__PURE__ */ import_react43.default.createElement("form", null, /* @__PURE__ */ import_react43.default.createElement("div", { class: "form-group" }, /* @__PURE__ */ import_react43.default.createElement("div", { className: "mb-6", size: "lg", textBefore: "Large" }, /* @__PURE__ */ import_react43.default.createElement("input", { class: "effect-1", type: "text", placeholder: "Type the restaurent's name you search" })))), /* @__PURE__ */ import_react43.default.createElement("br", null), /* @__PURE__ */ import_react43.default.createElement("div", { align: "right" }, /* @__PURE__ */ import_react43.default.createElement(Link, { to: "/recipes", className: "btn btn-lg  custom-button d-inline-flex p-2", role: "button" }, "Search for a restaurent")), /* @__PURE__ */ import_react43.default.createElement("br", null), /* @__PURE__ */ import_react43.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react43.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react43.default.createElement("h1", { className: "display-4" }, "Recipes for every occasion"), /* @__PURE__ */ import_react43.default.createElement("p", { className: "lead2 text-muted" }, "We\u2019ve pulled together our most popular recipes, our latest additions, and our editor\u2019s picks, so there\u2019s sure to be something tempting for you to try."))), /* @__PURE__ */ import_react43.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react43.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react43.default.createElement("div", { className: "row" }, recipes.length > 0 ? allRecipes : noRecipe), /* @__PURE__ */ import_react43.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react43.default.createElement("div", { className: "pagy d-flex align-items-end justify-content-end", align: "right" }, /* @__PURE__ */ import_react43.default.createElement(Pagination_default, null))))), /* @__PURE__ */ import_react43.default.createElement(Footer_default, null)))));
+  }
+  var Home_default = Home;
+
+  // app/javascript/components/Products.jsx
+  var import_react44 = __toESM(require_react());
+  var import_react_blink_text2 = __toESM(require_ReactBlinkText());
+  var Products = () => {
+    const navigate = useNavigate();
+    const [recipes, setRecipes] = (0, import_react44.useState)([]);
+    (0, import_react44.useEffect)(() => {
+      const url = "/api/v1/recipes/index";
+      fetch(url).then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+        throw new Error("Network response was not ok.");
+      }).then((res) => setRecipes(res)).catch(() => navigate("/"));
+    }, []);
+    const allRecipes = recipes.map((recipe, index) => /* @__PURE__ */ import_react44.default.createElement("div", { key: index, className: "col-md-6 col-lg-4" }, /* @__PURE__ */ import_react44.default.createElement("div", { className: "card mb-4" }, /* @__PURE__ */ import_react44.default.createElement(
+      "img",
+      {
+        src: recipe.image,
+        className: "card-img-top",
+        alt: `${recipe.name} image`
+      }
+    ), /* @__PURE__ */ import_react44.default.createElement("div", { className: "card-body" }, /* @__PURE__ */ import_react44.default.createElement("h5", { className: "card-title" }, recipe.name), /* @__PURE__ */ import_react44.default.createElement(Link, { to: `/recipe/${recipe.id}`, className: "btn custom-button" }, "View Recipe")))));
+    const noRecipe = /* @__PURE__ */ import_react44.default.createElement("div", { className: "vw-100 vh-50 d-flex align-items-center justify-content-center" }, /* @__PURE__ */ import_react44.default.createElement("h4", null, "No recipes yet. Why not ", /* @__PURE__ */ import_react44.default.createElement(Link, { to: "/new_recipe" }, "create one")));
+    return /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, /* @__PURE__ */ import_react44.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react44.default.createElement(Container_default, null, /* @__PURE__ */ import_react44.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react44.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react44.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react44.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react44.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react44.default.createElement(Nav_default2.Link, { href: "/products" }, /* @__PURE__ */ import_react44.default.createElement("b", null, "Products")), /* @__PURE__ */ import_react44.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react44.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react44.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react44.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react44.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react44.default.createElement("a", { href: "/user" }, "Mark Otto"))))), /* @__PURE__ */ import_react44.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react44.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react44.default.createElement("h1", { className: "display-4" }, "Recipes for every occasion"), /* @__PURE__ */ import_react44.default.createElement("p", { className: "lead text-muted" }, "We\u2019ve pulled together our most popular recipes, our latest additions, and our editor\u2019s picks, so there\u2019s sure to be something tempting for you to try."))), /* @__PURE__ */ import_react44.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react44.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react44.default.createElement("div", { className: "row" }, recipes.length > 0 ? allRecipes : noRecipe), /* @__PURE__ */ import_react44.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react44.default.createElement("div", { className: "pagy d-flex align-items-end justify-content-end", align: "right" }, /* @__PURE__ */ import_react44.default.createElement(Pagination_default, null))))), /* @__PURE__ */ import_react44.default.createElement(Footer_default, null));
   };
   var Products_default = Products;
 
   // app/javascript/components/Costumers.jsx
-  var import_react44 = __toESM(require_react());
+  var import_react45 = __toESM(require_react());
   var import_react_blink_text3 = __toESM(require_ReactBlinkText());
   var Costumers = () => {
-    return /* @__PURE__ */ import_react44.default.createElement(import_react44.default.Fragment, null, /* @__PURE__ */ import_react44.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react44.default.createElement(Container_default, null, /* @__PURE__ */ import_react44.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react44.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react44.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react44.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react44.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react44.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react44.default.createElement(Nav_default2.Link, { href: "/costumers" }, /* @__PURE__ */ import_react44.default.createElement("b", null, "Costumers")), /* @__PURE__ */ import_react44.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react44.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react44.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react44.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react44.default.createElement("a", { href: "/user" }, "Mark Otto"))))), /* @__PURE__ */ import_react44.default.createElement(Footer_default, null));
+    return /* @__PURE__ */ import_react45.default.createElement(import_react45.default.Fragment, null, /* @__PURE__ */ import_react45.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react45.default.createElement(Container_default, null, /* @__PURE__ */ import_react45.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react45.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react45.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react45.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react45.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react45.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react45.default.createElement(Nav_default2.Link, { href: "/costumers" }, /* @__PURE__ */ import_react45.default.createElement("b", null, "Costumers")), /* @__PURE__ */ import_react45.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react45.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react45.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react45.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react45.default.createElement("a", { href: "/user" }, "Mark Otto"))))), /* @__PURE__ */ import_react45.default.createElement(Footer_default, null));
   };
   var Costumers_default = Costumers;
 
   // app/javascript/components/About.jsx
-  var import_react45 = __toESM(require_react());
+  var import_react46 = __toESM(require_react());
   var import_react_blink_text4 = __toESM(require_ReactBlinkText());
   var About = () => {
-    return /* @__PURE__ */ import_react45.default.createElement("div", null, /* @__PURE__ */ import_react45.default.createElement(
+    return /* @__PURE__ */ import_react46.default.createElement("div", null, /* @__PURE__ */ import_react46.default.createElement(
       UserInfo,
       {
         name: "Mezgani Ali",
@@ -42511,17 +42576,17 @@
         object: "alamatoka",
         message: "alamatoka"
       }
-    ), /* @__PURE__ */ import_react45.default.createElement(Footer_default, null));
+    ), /* @__PURE__ */ import_react46.default.createElement(Footer_default, null));
   };
   function UserInfo(props) {
-    return /* @__PURE__ */ import_react45.default.createElement(import_react45.default.Fragment, null, /* @__PURE__ */ import_react45.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react45.default.createElement(Container_default, null, /* @__PURE__ */ import_react45.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react45.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react45.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react45.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react45.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react45.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react45.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react45.default.createElement(Nav_default2.Link, { href: "/about" }, /* @__PURE__ */ import_react45.default.createElement("b", null, "About")), /* @__PURE__ */ import_react45.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react45.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react45.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react45.default.createElement("a", { href: "/user" }, "Mark Otto"))))), /* @__PURE__ */ import_react45.default.createElement("div", { className: "vw-100 vh-50 primary-color d-flex align-items-center justify-content-center", align: "Justify" }, /* @__PURE__ */ import_react45.default.createElement("div", { className: "jumbotron jumbotron-fluid bg-transparent" }, /* @__PURE__ */ import_react45.default.createElement("div", { className: "container secondary-color" }, /* @__PURE__ */ import_react45.default.createElement("h1", { className: "display-9 top-buffer" }, "About Recipes"), /* @__PURE__ */ import_react45.default.createElement("p", { className: "lead1" }, "A curated list of recipes and restaurents for the best homemade meal and delicacies."), /* @__PURE__ */ import_react45.default.createElement("br", null), /* @__PURE__ */ import_react45.default.createElement("hr", null), /* @__PURE__ */ import_react45.default.createElement("div", { className: "py-5m" }, /* @__PURE__ */ import_react45.default.createElement("main", { className: "containerm" }, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`), /* @__PURE__ */ import_react45.default.createElement("br", null), /* @__PURE__ */ import_react45.default.createElement("main", { className: "containerm" }, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`), /* @__PURE__ */ import_react45.default.createElement("br", null), /* @__PURE__ */ import_react45.default.createElement("p", null, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`), /* @__PURE__ */ import_react45.default.createElement("br", null), /* @__PURE__ */ import_react45.default.createElement("p", null, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`), /* @__PURE__ */ import_react45.default.createElement("br", null), /* @__PURE__ */ import_react45.default.createElement("p", null, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`), /* @__PURE__ */ import_react45.default.createElement("p", null, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`))))));
+    return /* @__PURE__ */ import_react46.default.createElement(import_react46.default.Fragment, null, /* @__PURE__ */ import_react46.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react46.default.createElement(Container_default, null, /* @__PURE__ */ import_react46.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react46.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react46.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react46.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react46.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react46.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react46.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react46.default.createElement(Nav_default2.Link, { href: "/about" }, /* @__PURE__ */ import_react46.default.createElement("b", null, "About")), /* @__PURE__ */ import_react46.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react46.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react46.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react46.default.createElement("a", { href: "/user" }, "Mark Otto"))))), /* @__PURE__ */ import_react46.default.createElement("div", { className: "vw-100 vh-50 primary-color d-flex align-items-center justify-content-center", align: "Justify" }, /* @__PURE__ */ import_react46.default.createElement("div", { className: "jumbotron jumbotron-fluid bg-transparent" }, /* @__PURE__ */ import_react46.default.createElement("div", { className: "container secondary-color" }, /* @__PURE__ */ import_react46.default.createElement("h1", { className: "display-9 top-buffer" }, "About Recipes"), /* @__PURE__ */ import_react46.default.createElement("p", { className: "lead1" }, "A curated list of recipes and restaurents for the best homemade meal and delicacies."), /* @__PURE__ */ import_react46.default.createElement("br", null), /* @__PURE__ */ import_react46.default.createElement("hr", null), /* @__PURE__ */ import_react46.default.createElement("div", { className: "py-5m" }, /* @__PURE__ */ import_react46.default.createElement("main", { className: "containerm" }, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`), /* @__PURE__ */ import_react46.default.createElement("br", null), /* @__PURE__ */ import_react46.default.createElement("main", { className: "containerm" }, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`), /* @__PURE__ */ import_react46.default.createElement("br", null), /* @__PURE__ */ import_react46.default.createElement("p", null, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`), /* @__PURE__ */ import_react46.default.createElement("br", null), /* @__PURE__ */ import_react46.default.createElement("p", null, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`), /* @__PURE__ */ import_react46.default.createElement("br", null), /* @__PURE__ */ import_react46.default.createElement("p", null, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`), /* @__PURE__ */ import_react46.default.createElement("p", null, `After the STS-51-G mission, Lucid was assigned to Capsule Communicator (CAPCOM) duty. She served as the CAPCOM for the STS-51-J mission in October 1985,[42] the STS-61-A mission in November 1985,[43] STS-61-B mission in November and December 1985,[44] and the STS-61-C mission in January 1986.[45] The January 1986 Space Shuttle Challenger disaster later that month halted Space Shuttle operations for 32 months while NASA conducted investigations and remediation. Flight crews were stood down. One consequence of the disaster was the Galileo project, an unmanned probe to Jupiter, which lost both its launch window and its ride due to the cancelation of the Shuttle-Centaur project.[46] On November 30, 1988, NASA announced that Galileo would be deployed by the Space Shuttle Atlantis on the STS-34 mission, which was scheduled for October 12, 1989. The mission was commanded by Donald E. Williams, with pilot Michael J. McCulley and Lucid, Ellen S. Baker and Franklin Chang-Diaz as mission specialists.[47] The launch was delayed for five days due to a faulty Space Shuttle main engine controller, and then for an additional day due to bad weather. Atlantis lifted off from KSC on October 18.[48] As the lead mission specialist, Lucid was primarily responsible for the Galileo spacecraft,[49] and initiated its deployment by pressing a button to separate Galileo from Atlantis.[50] Galileo was successfully deployed six and a half hours into the flight using the Inertial Upper Stage (IUS). As this was much less powerful than the Shuttle-Centaur upper stage, Galileo had to employ a gravity assist from Venus and two from Earth, and it took six years instead of two for the Galileo to reach Jupiter.[49][48] "Both Ellen and I sighed a great sigh of relief, because we figured Galileo was not our concern at that point, because we'd gotten rid of it," Lucid reported. "Happiness was an empty payload bay and we got happier and happier as the IUS and Galileo went further away from us."[51] The mission also conducted a five-day Shuttle Solar Backscatter Ultraviolet (SSBUV) experiment carried in the cargo bay, and experiments related to growth hormone crystal distribution (GHCD) and polymer morphology (PM), a sensor technology experiment (STEX), a mesoscale lightning experiment (MLE), a Shuttle Student Involvement Program (SSIP) experiment that investigated ice crystal formation in zero gravity, and a ground-based Air Force Maui Optical Station (AMOS) experiment. Lucid and Chang-Diaz operated the PM experiment, which used a laptop computer to collect two gigabytes of data from an infrared spectrometer to study the effects of microgravity on minerals. The crew filmed their activities with an IMAX camera. The mission completed 79 orbits of the Earth, traveling 3.2 million kilometers (2 million miles) in 119 hours and 39 minutes before landing at Edwards Air Force Base on October 23.[48][52]`))))));
   }
   var About_default = About;
 
   // app/javascript/components/Contact.jsx
-  var import_react46 = __toESM(require_react());
+  var import_react47 = __toESM(require_react());
   var Contact = () => {
-    return /* @__PURE__ */ import_react46.default.createElement("div", null, /* @__PURE__ */ import_react46.default.createElement(
+    return /* @__PURE__ */ import_react47.default.createElement("div", null, /* @__PURE__ */ import_react47.default.createElement(
       UserInfo2,
       {
         name: "Mezgani Ali",
@@ -42534,20 +42599,20 @@
     ));
   };
   function UserInfo2(props) {
-    return /* @__PURE__ */ import_react46.default.createElement(import_react46.default.Fragment, null, /* @__PURE__ */ import_react46.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react46.default.createElement(Container_default, null, /* @__PURE__ */ import_react46.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react46.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react46.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react46.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react46.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react46.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react46.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react46.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react46.default.createElement(Nav_default2.Link, { href: "/contact" }, /* @__PURE__ */ import_react46.default.createElement("b", null, "Contact")))), /* @__PURE__ */ import_react46.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react46.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react46.default.createElement("a", { href: "/user" }, "Mark Otto"))))), /* @__PURE__ */ import_react46.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react46.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react46.default.createElement("h1", { className: "display-4" }, "Recipes for every occasion"), /* @__PURE__ */ import_react46.default.createElement("p", { className: "lead2 text-muted" }, "We\u2019ve pulled together our most popular recipes, our latest additions, and our editor\u2019s picks, so there\u2019s sure to be something tempting for you to try."))), /* @__PURE__ */ import_react46.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react46.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react46.default.createElement("div", { className: "rowuser" }, /* @__PURE__ */ import_react46.default.createElement("div", { className: "col-md-6 col-lg-4" }), /* @__PURE__ */ import_react46.default.createElement("form", null, /* @__PURE__ */ import_react46.default.createElement("div", { className: "col-md-6a col-lg-9a" }, /* @__PURE__ */ import_react46.default.createElement("div", { className: "card1 mb-6a" }, /* @__PURE__ */ import_react46.default.createElement("div", { class: "form-group", className: "card-img-top" }, /* @__PURE__ */ import_react46.default.createElement("div", { className: "mb-6a", size: "lg", textBefore: "Large" }, /* @__PURE__ */ import_react46.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Name and prename: ${props.name}` }), /* @__PURE__ */ import_react46.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Mail: ${props.mail}` }), /* @__PURE__ */ import_react46.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Mobile: ${props.mobile}` }), /* @__PURE__ */ import_react46.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Object: ${props.object}` }), /* @__PURE__ */ import_react46.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Message: ${props.message}` }))))), /* @__PURE__ */ import_react46.default.createElement("div", { align: "right" }, /* @__PURE__ */ import_react46.default.createElement(Link, { to: "/update", className: "btn btn-lg  custom-button d-inline-flex p-2", role: "button" }, "Submit personal message")))))), /* @__PURE__ */ import_react46.default.createElement(Footer_default, null));
+    return /* @__PURE__ */ import_react47.default.createElement(import_react47.default.Fragment, null, /* @__PURE__ */ import_react47.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react47.default.createElement(Container_default, null, /* @__PURE__ */ import_react47.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react47.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react47.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react47.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react47.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react47.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react47.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react47.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react47.default.createElement(Nav_default2.Link, { href: "/contact" }, /* @__PURE__ */ import_react47.default.createElement("b", null, "Contact")))), /* @__PURE__ */ import_react47.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react47.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react47.default.createElement("a", { href: "/user" }, "Mark Otto"))))), /* @__PURE__ */ import_react47.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react47.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react47.default.createElement("h1", { className: "display-4" }, "Recipes for every occasion"), /* @__PURE__ */ import_react47.default.createElement("p", { className: "lead2 text-muted" }, "We\u2019ve pulled together our most popular recipes, our latest additions, and our editor\u2019s picks, so there\u2019s sure to be something tempting for you to try."))), /* @__PURE__ */ import_react47.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react47.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react47.default.createElement("div", { className: "rowuser" }, /* @__PURE__ */ import_react47.default.createElement("div", { className: "col-md-6 col-lg-4" }), /* @__PURE__ */ import_react47.default.createElement("form", null, /* @__PURE__ */ import_react47.default.createElement("div", { className: "col-md-6a col-lg-9a" }, /* @__PURE__ */ import_react47.default.createElement("div", { className: "card1 mb-6a" }, /* @__PURE__ */ import_react47.default.createElement("div", { class: "form-group", className: "card-img-top" }, /* @__PURE__ */ import_react47.default.createElement("div", { className: "mb-6a", size: "lg", textBefore: "Large" }, /* @__PURE__ */ import_react47.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Name and prename: ${props.name}` }), /* @__PURE__ */ import_react47.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Mail: ${props.mail}` }), /* @__PURE__ */ import_react47.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Mobile: ${props.mobile}` }), /* @__PURE__ */ import_react47.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Object: ${props.object}` }), /* @__PURE__ */ import_react47.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Message: ${props.message}` }))))), /* @__PURE__ */ import_react47.default.createElement("div", { align: "right" }, /* @__PURE__ */ import_react47.default.createElement(Link, { to: "/update", className: "btn btn-lg  custom-button d-inline-flex p-2", role: "button" }, "Submit personal message")))))), /* @__PURE__ */ import_react47.default.createElement(Footer_default, null));
   }
   var Contact_default = Contact;
 
   // app/javascript/components/Recipes.jsx
-  var import_react47 = __toESM(require_react());
+  var import_react48 = __toESM(require_react());
   var import_react_blink_text5 = __toESM(require_ReactBlinkText());
   var MenuBar = () => {
-    return /* @__PURE__ */ import_react47.default.createElement(import_react47.default.Fragment, null, /* @__PURE__ */ import_react47.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react47.default.createElement(Container_default, null, /* @__PURE__ */ import_react47.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react47.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react47.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react47.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react47.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react47.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react47.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react47.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react47.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react47.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react47.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react47.default.createElement("a", { href: "/user" }, "Mark Otto"))))));
+    return /* @__PURE__ */ import_react48.default.createElement(import_react48.default.Fragment, null, /* @__PURE__ */ import_react48.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react48.default.createElement(Container_default, null, /* @__PURE__ */ import_react48.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react48.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react48.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react48.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react48.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react48.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react48.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react48.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react48.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react48.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react48.default.createElement(Navbar_default.Text, null, "Signed in as: ", /* @__PURE__ */ import_react48.default.createElement("a", { href: "/user" }, "Mark Otto"))))));
   };
   var Recipes = () => {
     const navigate = useNavigate();
-    const [recipes, setRecipes] = (0, import_react47.useState)([]);
-    (0, import_react47.useEffect)(() => {
+    const [recipes, setRecipes] = (0, import_react48.useState)([]);
+    (0, import_react48.useEffect)(() => {
       const url = "/api/v1/recipes/index";
       fetch(url).then((res) => {
         if (res.ok) {
@@ -42556,26 +42621,26 @@
         throw new Error("Network response was not ok.");
       }).then((res) => setRecipes(res)).catch(() => navigate("/"));
     }, []);
-    const allRecipes = recipes.map((recipe, index) => /* @__PURE__ */ import_react47.default.createElement("div", { key: index, className: "col-md-6 col-lg-4" }, /* @__PURE__ */ import_react47.default.createElement("div", { className: "card mb-4" }, /* @__PURE__ */ import_react47.default.createElement(
+    const allRecipes = recipes.map((recipe, index) => /* @__PURE__ */ import_react48.default.createElement("div", { key: index, className: "col-md-6 col-lg-4" }, /* @__PURE__ */ import_react48.default.createElement("div", { className: "card mb-4" }, /* @__PURE__ */ import_react48.default.createElement(
       "img",
       {
         src: recipe.image,
         className: "card-img-top",
         alt: `${recipe.name} image`
       }
-    ), /* @__PURE__ */ import_react47.default.createElement("div", { className: "card-body" }, /* @__PURE__ */ import_react47.default.createElement("h5", { className: "card-title" }, recipe.name), /* @__PURE__ */ import_react47.default.createElement(Link, { to: `/recipe/${recipe.id}`, className: "btn custom-button" }, "View Recipe")))));
-    const noRecipe = /* @__PURE__ */ import_react47.default.createElement("div", { className: "vw-100 vh-50 d-flex align-items-center justify-content-center" }, /* @__PURE__ */ import_react47.default.createElement("h4", null, "No recipes yet. Why not ", /* @__PURE__ */ import_react47.default.createElement(Link, { to: "/new_recipe" }, "create one")));
-    return /* @__PURE__ */ import_react47.default.createElement(import_react47.default.Fragment, null, /* @__PURE__ */ import_react47.default.createElement(MenuBar, null), /* @__PURE__ */ import_react47.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react47.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react47.default.createElement("h1", { className: "display-4" }, "Recipes for every occasion"), /* @__PURE__ */ import_react47.default.createElement("p", { className: "lead text-muted" }, "We\u2019ve pulled together our most popular recipes, our latest additions, and our editor\u2019s picks, so there\u2019s sure to be something tempting for you to try."))), /* @__PURE__ */ import_react47.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react47.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react47.default.createElement("div", { className: "text-end mb-3" }, /* @__PURE__ */ import_react47.default.createElement(Link, { to: "/recipe" }, "Create New Recipe")), /* @__PURE__ */ import_react47.default.createElement("div", { className: "row" }, recipes.length > 0 ? allRecipes : noRecipe), /* @__PURE__ */ import_react47.default.createElement(Link, { to: "/", className: "btn btn-link" }, "Home"))), /* @__PURE__ */ import_react47.default.createElement(Footer_default, null));
+    ), /* @__PURE__ */ import_react48.default.createElement("div", { className: "card-body" }, /* @__PURE__ */ import_react48.default.createElement("h5", { className: "card-title" }, recipe.name), /* @__PURE__ */ import_react48.default.createElement(Link, { to: `/recipe/${recipe.id}`, className: "btn custom-button" }, "View Recipe")))));
+    const noRecipe = /* @__PURE__ */ import_react48.default.createElement("div", { className: "vw-100 vh-50 d-flex align-items-center justify-content-center" }, /* @__PURE__ */ import_react48.default.createElement("h4", null, "No recipes yet. Why not ", /* @__PURE__ */ import_react48.default.createElement(Link, { to: "/new_recipe" }, "create one")));
+    return /* @__PURE__ */ import_react48.default.createElement(import_react48.default.Fragment, null, /* @__PURE__ */ import_react48.default.createElement(MenuBar, null), /* @__PURE__ */ import_react48.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react48.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react48.default.createElement("h1", { className: "display-4" }, "Recipes for every occasion"), /* @__PURE__ */ import_react48.default.createElement("p", { className: "lead text-muted" }, "We\u2019ve pulled together our most popular recipes, our latest additions, and our editor\u2019s picks, so there\u2019s sure to be something tempting for you to try."))), /* @__PURE__ */ import_react48.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react48.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react48.default.createElement("div", { className: "text-end mb-3" }, /* @__PURE__ */ import_react48.default.createElement(Link, { to: "/recipe" }, "Create New Recipe")), /* @__PURE__ */ import_react48.default.createElement("div", { className: "row" }, recipes.length > 0 ? allRecipes : noRecipe), /* @__PURE__ */ import_react48.default.createElement(Link, { to: "/", className: "btn btn-link" }, "Home"))), /* @__PURE__ */ import_react48.default.createElement(Footer_default, null));
   };
   var Recipes_default = Recipes;
 
   // app/javascript/components/Recipe.jsx
-  var import_react48 = __toESM(require_react());
+  var import_react49 = __toESM(require_react());
   var Recipe = () => {
     const params = useParams();
     const navigate = useNavigate();
-    const [recipe, setRecipe] = (0, import_react48.useState)({ ingredients: "" });
-    (0, import_react48.useEffect)(() => {
+    const [recipe, setRecipe] = (0, import_react49.useState)({ ingredients: "" });
+    (0, import_react49.useEffect)(() => {
       const url = `/api/v1/show/${params.id}`;
       fetch(url).then((response) => {
         if (response.ok) {
@@ -42606,26 +42671,26 @@
     const ingredientList = () => {
       let ingredientList2 = "No ingredients available";
       if (recipe.ingredients.length > 0) {
-        ingredientList2 = recipe.ingredients.split(",").map((ingredient, index) => /* @__PURE__ */ import_react48.default.createElement("li", { key: index, className: "list-group-item" }, ingredient));
+        ingredientList2 = recipe.ingredients.split(",").map((ingredient, index) => /* @__PURE__ */ import_react49.default.createElement("li", { key: index, className: "list-group-item" }, ingredient));
       }
       return ingredientList2;
     };
     const recipeInstruction = addHtmlEntities(recipe.instruction);
-    return /* @__PURE__ */ import_react48.default.createElement(import_react48.default.Fragment, null, /* @__PURE__ */ import_react48.default.createElement("div", { className: "" }, /* @__PURE__ */ import_react48.default.createElement("div", { className: "hero position-relative d-flex align-items-center justify-content-center" }, /* @__PURE__ */ import_react48.default.createElement(
+    return /* @__PURE__ */ import_react49.default.createElement(import_react49.default.Fragment, null, /* @__PURE__ */ import_react49.default.createElement("div", { className: "" }, /* @__PURE__ */ import_react49.default.createElement("div", { className: "hero position-relative d-flex align-items-center justify-content-center" }, /* @__PURE__ */ import_react49.default.createElement(
       "img",
       {
         src: recipe.image,
         alt: `${recipe.name} image`,
         className: "img-fluid position-absolute"
       }
-    ), /* @__PURE__ */ import_react48.default.createElement("div", { className: "overlay bg-dark position-absolute" }), /* @__PURE__ */ import_react48.default.createElement("h1", { className: "display-4 position-relative text-white" }, recipe.name)), /* @__PURE__ */ import_react48.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react48.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react48.default.createElement("div", { className: "col-sm-12 col-lg-7" }, /* @__PURE__ */ import_react48.default.createElement("h5", { className: "mb-2" }, "Preparation Instructions"), /* @__PURE__ */ import_react48.default.createElement(
+    ), /* @__PURE__ */ import_react49.default.createElement("div", { className: "overlay bg-dark position-absolute" }), /* @__PURE__ */ import_react49.default.createElement("h1", { className: "display-4 position-relative text-white" }, recipe.name)), /* @__PURE__ */ import_react49.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react49.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react49.default.createElement("div", { className: "col-sm-12 col-lg-7" }, /* @__PURE__ */ import_react49.default.createElement("h5", { className: "mb-2" }, "Preparation Instructions"), /* @__PURE__ */ import_react49.default.createElement(
       "div",
       {
         dangerouslySetInnerHTML: {
           __html: `${recipeInstruction}`
         }
       }
-    )), /* @__PURE__ */ import_react48.default.createElement("div", { className: "col-sm-12 col-lg-2" }, /* @__PURE__ */ import_react48.default.createElement(
+    )), /* @__PURE__ */ import_react49.default.createElement("div", { className: "col-sm-12 col-lg-2" }, /* @__PURE__ */ import_react49.default.createElement(
       "button",
       {
         type: "button",
@@ -42633,17 +42698,17 @@
         onClick: deleteRecipe
       },
       "Delete Recipe"
-    )), /* @__PURE__ */ import_react48.default.createElement("div", { className: "col-sm-12 col-lg-3" }, /* @__PURE__ */ import_react48.default.createElement("ul", { className: "list-group" }, /* @__PURE__ */ import_react48.default.createElement("h5", { className: "mb-2" }, "Ingredients"), ingredientList()))), /* @__PURE__ */ import_react48.default.createElement(Link, { to: "/recipes", className: "btn btn-link" }, "Back to recipes"))), /* @__PURE__ */ import_react48.default.createElement(Footer_default, null));
+    )), /* @__PURE__ */ import_react49.default.createElement("div", { className: "col-sm-12 col-lg-3" }, /* @__PURE__ */ import_react49.default.createElement("ul", { className: "list-group" }, /* @__PURE__ */ import_react49.default.createElement("h5", { className: "mb-2" }, "Ingredients"), ingredientList()))), /* @__PURE__ */ import_react49.default.createElement(Link, { to: "/recipes", className: "btn btn-link" }, "Back to recipes"))), /* @__PURE__ */ import_react49.default.createElement(Footer_default, null));
   };
   var Recipe_default = Recipe;
 
   // app/javascript/components/NewRecipe.jsx
-  var import_react49 = __toESM(require_react());
+  var import_react50 = __toESM(require_react());
   var NewRecipe = () => {
     const navigate = useNavigate();
-    const [name, setName] = (0, import_react49.useState)("");
-    const [ingredients, setIngredients] = (0, import_react49.useState)("");
-    const [instruction, setInstruction] = (0, import_react49.useState)("");
+    const [name, setName] = (0, import_react50.useState)("");
+    const [ingredients, setIngredients] = (0, import_react50.useState)("");
+    const [instruction, setInstruction] = (0, import_react50.useState)("");
     const stripHtmlEntities = (str) => {
       return String(str).replace(/\n/g, "<br> <br>").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     };
@@ -42675,7 +42740,7 @@
         throw new Error("Network response was not ok.");
       }).then((response) => navigate(`/recipe/${response.id}`)).catch((error2) => console.log(error2.message));
     };
-    return /* @__PURE__ */ import_react49.default.createElement(import_react49.default.Fragment, null, /* @__PURE__ */ import_react49.default.createElement("div", { className: "container mt-5" }, /* @__PURE__ */ import_react49.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react49.default.createElement("div", { className: "col-sm-12 col-lg-6 offset-lg-3" }, /* @__PURE__ */ import_react49.default.createElement("h1", { className: "font-weight-normal mb-5" }, "Add a new recipe to our awesome recipe collection."), /* @__PURE__ */ import_react49.default.createElement("form", { onSubmit }, /* @__PURE__ */ import_react49.default.createElement("div", { className: "form-group" }, /* @__PURE__ */ import_react49.default.createElement("label", { htmlFor: "recipeName" }, "Recipe name"), /* @__PURE__ */ import_react49.default.createElement(
+    return /* @__PURE__ */ import_react50.default.createElement(import_react50.default.Fragment, null, /* @__PURE__ */ import_react50.default.createElement("div", { className: "container mt-5" }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "col-sm-12 col-lg-6 offset-lg-3" }, /* @__PURE__ */ import_react50.default.createElement("h1", { className: "font-weight-normal mb-5" }, "Add a new recipe to our awesome recipe collection."), /* @__PURE__ */ import_react50.default.createElement("form", { onSubmit }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "form-group" }, /* @__PURE__ */ import_react50.default.createElement("label", { htmlFor: "recipeName" }, "Recipe name"), /* @__PURE__ */ import_react50.default.createElement(
       "input",
       {
         type: "text",
@@ -42685,7 +42750,7 @@
         required: true,
         onChange: (event) => onChange(event, setName)
       }
-    )), /* @__PURE__ */ import_react49.default.createElement("div", { className: "form-group" }, /* @__PURE__ */ import_react49.default.createElement("label", { htmlFor: "recipeIngredients" }, "Ingredients"), /* @__PURE__ */ import_react49.default.createElement(
+    )), /* @__PURE__ */ import_react50.default.createElement("div", { className: "form-group" }, /* @__PURE__ */ import_react50.default.createElement("label", { htmlFor: "recipeIngredients" }, "Ingredients"), /* @__PURE__ */ import_react50.default.createElement(
       "input",
       {
         type: "text",
@@ -42695,7 +42760,7 @@
         required: true,
         onChange: (event) => onChange(event, setIngredients)
       }
-    ), /* @__PURE__ */ import_react49.default.createElement("small", { id: "ingredientsHelp", className: "form-text text-muted" }, "Separate each ingredient with a comma.")), /* @__PURE__ */ import_react49.default.createElement("label", { htmlFor: "instruction" }, "Preparation Instructions"), /* @__PURE__ */ import_react49.default.createElement(
+    ), /* @__PURE__ */ import_react50.default.createElement("small", { id: "ingredientsHelp", className: "form-text text-muted" }, "Separate each ingredient with a comma.")), /* @__PURE__ */ import_react50.default.createElement("label", { htmlFor: "instruction" }, "Preparation Instructions"), /* @__PURE__ */ import_react50.default.createElement(
       "textarea",
       {
         className: "form-control",
@@ -42705,14 +42770,14 @@
         required: true,
         onChange: (event) => onChange(event, setInstruction)
       }
-    ), /* @__PURE__ */ import_react49.default.createElement("button", { type: "submit", className: "btn custom-button mt-3" }, "Create Recipe"), /* @__PURE__ */ import_react49.default.createElement(Link, { to: "/recipes", className: "btn btn-link mt-3" }, "Back to recipes"))))), /* @__PURE__ */ import_react49.default.createElement(Footer_default, null));
+    ), /* @__PURE__ */ import_react50.default.createElement("button", { type: "submit", className: "btn custom-button mt-3" }, "Create Recipe"), /* @__PURE__ */ import_react50.default.createElement(Link, { to: "/recipes", className: "btn btn-link mt-3" }, "Back to recipes"))))), /* @__PURE__ */ import_react50.default.createElement(Footer_default, null));
   };
   var NewRecipe_default = NewRecipe;
 
   // app/javascript/components/User.jsx
-  var import_react50 = __toESM(require_react());
+  var import_react51 = __toESM(require_react());
   var User = () => {
-    return /* @__PURE__ */ import_react50.default.createElement("div", null, /* @__PURE__ */ import_react50.default.createElement(
+    return /* @__PURE__ */ import_react51.default.createElement("div", null, /* @__PURE__ */ import_react51.default.createElement(
       UserInfo3,
       {
         username: "mezgani",
@@ -42723,46 +42788,46 @@
         password: "alamatoka",
         cpassword: "alamatoka"
       }
-    ), /* @__PURE__ */ import_react50.default.createElement(Footer_default, null));
+    ), /* @__PURE__ */ import_react51.default.createElement(Footer_default, null));
   };
   function UserInfo3(props) {
-    return /* @__PURE__ */ import_react50.default.createElement(import_react50.default.Fragment, null, /* @__PURE__ */ import_react50.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react50.default.createElement(Container_default, null, /* @__PURE__ */ import_react50.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react50.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react50.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react50.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react50.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react50.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react50.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react50.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react50.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react50.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react50.default.createElement(Navbar_default.Text, null, /* @__PURE__ */ import_react50.default.createElement("a", { href: "/logout" }, "Sign out"))))), /* @__PURE__ */ import_react50.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react50.default.createElement("h1", { className: "display-4" }, "Recipes for every occasion"), /* @__PURE__ */ import_react50.default.createElement("p", { className: "lead2 text-muted" }, "We\u2019ve pulled together our most popular recipes, our latest additions, and our editor\u2019s picks, so there\u2019s sure to be something tempting for you to try."))), /* @__PURE__ */ import_react50.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react50.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "rowuser" }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "col-md-6 col-lg-4" }, /* @__PURE__ */ import_react50.default.createElement(Navbar_default, { bg: "dark", expand: "lg", fg: "white" }, /* @__PURE__ */ import_react50.default.createElement(Container_default, null, /* @__PURE__ */ import_react50.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react50.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react50.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react50.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react50.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react50.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react50.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react50.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react50.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))))))))), /* @__PURE__ */ import_react50.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react50.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "rowuser" }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "col-md-6 col-lg-4" }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "card mb-4" }, /* @__PURE__ */ import_react50.default.createElement(
+    return /* @__PURE__ */ import_react51.default.createElement(import_react51.default.Fragment, null, /* @__PURE__ */ import_react51.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react51.default.createElement(Container_default, null, /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react51.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Text, null, /* @__PURE__ */ import_react51.default.createElement("a", { href: "/logout" }, "Sign out"))))), /* @__PURE__ */ import_react51.default.createElement("section", { className: "jumbotron jumbotron-fluid text-center" }, /* @__PURE__ */ import_react51.default.createElement("div", { className: "container py-5" }, /* @__PURE__ */ import_react51.default.createElement("h1", { className: "display-4" }, "Recipes for every occasion"), /* @__PURE__ */ import_react51.default.createElement("p", { className: "lead2 text-muted" }, "We\u2019ve pulled together our most popular recipes, our latest additions, and our editor\u2019s picks, so there\u2019s sure to be something tempting for you to try."))), /* @__PURE__ */ import_react51.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react51.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react51.default.createElement("div", { className: "rowuser" }, /* @__PURE__ */ import_react51.default.createElement("div", { className: "col-md-6 col-lg-4" }, /* @__PURE__ */ import_react51.default.createElement(Navbar_default, { bg: "dark", expand: "lg", fg: "white" }, /* @__PURE__ */ import_react51.default.createElement(Container_default, null, /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react51.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))))))))), /* @__PURE__ */ import_react51.default.createElement("div", { className: "py-5" }, /* @__PURE__ */ import_react51.default.createElement("main", { className: "container" }, /* @__PURE__ */ import_react51.default.createElement("div", { className: "rowuser" }, /* @__PURE__ */ import_react51.default.createElement("div", { className: "col-md-6 col-lg-4" }, /* @__PURE__ */ import_react51.default.createElement("div", { className: "card mb-4" }, /* @__PURE__ */ import_react51.default.createElement(
       "img",
       {
         src: props.image,
         className: "card-img-top",
         alt: props.cname
       }
-    ))), /* @__PURE__ */ import_react50.default.createElement("form", null, /* @__PURE__ */ import_react50.default.createElement("div", { className: "col-md-6a col-lg-9a" }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "card1 mb-6a" }, /* @__PURE__ */ import_react50.default.createElement("div", { class: "form-group", className: "card-img-top" }, /* @__PURE__ */ import_react50.default.createElement("div", { className: "mb-6a", size: "lg", textBefore: "Large" }, /* @__PURE__ */ import_react50.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Username: ${props.username}` }), /* @__PURE__ */ import_react50.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Complete name: ${props.cname}` }), /* @__PURE__ */ import_react50.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Mail: ${props.mail}` }), /* @__PURE__ */ import_react50.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Mobile: ${props.mobile}` }), /* @__PURE__ */ import_react50.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Password: ${props.password}` }), /* @__PURE__ */ import_react50.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Confirm password: ${props.cpassword}` }))))), /* @__PURE__ */ import_react50.default.createElement("div", { align: "right" }, /* @__PURE__ */ import_react50.default.createElement(Link, { to: "/update", className: "btn btn-lg  custom-button d-inline-flex p-2", role: "button" }, "Update personal informations")))))));
+    ))), /* @__PURE__ */ import_react51.default.createElement("form", null, /* @__PURE__ */ import_react51.default.createElement("div", { className: "col-md-6a col-lg-9a" }, /* @__PURE__ */ import_react51.default.createElement("div", { className: "card1 mb-6a" }, /* @__PURE__ */ import_react51.default.createElement("div", { class: "form-group", className: "card-img-top" }, /* @__PURE__ */ import_react51.default.createElement("div", { className: "mb-6a", size: "lg", textBefore: "Large" }, /* @__PURE__ */ import_react51.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Username: ${props.username}` }), /* @__PURE__ */ import_react51.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Complete name: ${props.cname}` }), /* @__PURE__ */ import_react51.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Mail: ${props.mail}` }), /* @__PURE__ */ import_react51.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Mobile: ${props.mobile}` }), /* @__PURE__ */ import_react51.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Password: ${props.password}` }), /* @__PURE__ */ import_react51.default.createElement("input", { class: "effect-1", type: "text", placeholder: `Confirm password: ${props.cpassword}` }))))), /* @__PURE__ */ import_react51.default.createElement("div", { align: "right" }, /* @__PURE__ */ import_react51.default.createElement(Link, { to: "/update", className: "btn btn-lg  custom-button d-inline-flex p-2", role: "button" }, "Update personal informations")))))));
   }
   var User_default = User;
 
   // app/javascript/components/Login.jsx
-  var import_react51 = __toESM(require_react());
+  var import_react52 = __toESM(require_react());
   var MenuBar2 = () => {
-    return /* @__PURE__ */ import_react51.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react51.default.createElement(Container_default, null, /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react51.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react51.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react51.default.createElement(Navbar_default.Text, null, /* @__PURE__ */ import_react51.default.createElement("a", { href: "/user" }, "Sign up")))));
+    return /* @__PURE__ */ import_react52.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react52.default.createElement(Container_default, null, /* @__PURE__ */ import_react52.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react52.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react52.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react52.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react52.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react52.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react52.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react52.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react52.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react52.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react52.default.createElement(Navbar_default.Text, null, /* @__PURE__ */ import_react52.default.createElement("a", { href: "/user" }, "Sign up")))));
   };
   var Login_default = MenuBar2;
 
   // app/javascript/components/Logout.jsx
-  var import_react52 = __toESM(require_react());
+  var import_react53 = __toESM(require_react());
   var Logout = () => {
-    return /* @__PURE__ */ import_react52.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react52.default.createElement(Container_default, null, /* @__PURE__ */ import_react52.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react52.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react52.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react52.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react52.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react52.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react52.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react52.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react52.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react52.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react52.default.createElement(Navbar_default.Text, null, /* @__PURE__ */ import_react52.default.createElement("a", { href: "/login" }, "Sign in")))));
+    return /* @__PURE__ */ import_react53.default.createElement(Navbar_default, { bg: "white", expand: "lg" }, /* @__PURE__ */ import_react53.default.createElement(Container_default, null, /* @__PURE__ */ import_react53.default.createElement(Navbar_default.Brand, { href: "/" }, "TheFork"), /* @__PURE__ */ import_react53.default.createElement(Navbar_default.Toggle, { "aria-controls": "basic-navbar-nav" }), /* @__PURE__ */ import_react53.default.createElement(Navbar_default.Collapse, { id: "basic-navbar-nav" }, /* @__PURE__ */ import_react53.default.createElement(Nav_default2, { className: "me-auto" }, /* @__PURE__ */ import_react53.default.createElement(Nav_default2.Link, { href: "/" }, "Home"), /* @__PURE__ */ import_react53.default.createElement(Nav_default2.Link, { href: "/products" }, "Products"), /* @__PURE__ */ import_react53.default.createElement(Nav_default2.Link, { href: "/costumers" }, "Costumers"), /* @__PURE__ */ import_react53.default.createElement(Nav_default2.Link, { href: "/about" }, "About"), /* @__PURE__ */ import_react53.default.createElement(Nav_default2.Link, { href: "/contact" }, "Contact"))), /* @__PURE__ */ import_react53.default.createElement(Navbar_default.Collapse, { className: "justify-content-end" }, /* @__PURE__ */ import_react53.default.createElement(Navbar_default.Text, null, /* @__PURE__ */ import_react53.default.createElement("a", { href: "/login" }, "Sign in")))));
   };
   var Logout_default = Logout;
 
   // app/javascript/routes/index.jsx
-  var routes_default = /* @__PURE__ */ import_react53.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react53.default.createElement(Routes, null, /* @__PURE__ */ import_react53.default.createElement(Route, { path: "/", exact: true, element: /* @__PURE__ */ import_react53.default.createElement(Home_default, null) }), /* @__PURE__ */ import_react53.default.createElement(Route, { path: "/products", element: /* @__PURE__ */ import_react53.default.createElement(Products_default, null) }), /* @__PURE__ */ import_react53.default.createElement(Route, { path: "/costumers", element: /* @__PURE__ */ import_react53.default.createElement(Costumers_default, null) }), /* @__PURE__ */ import_react53.default.createElement(Route, { path: "/about", element: /* @__PURE__ */ import_react53.default.createElement(About_default, null) }), /* @__PURE__ */ import_react53.default.createElement(Route, { path: "/contact", element: /* @__PURE__ */ import_react53.default.createElement(Contact_default, null) }), /* @__PURE__ */ import_react53.default.createElement(Route, { path: "/user", element: /* @__PURE__ */ import_react53.default.createElement(User_default, null) }), /* @__PURE__ */ import_react53.default.createElement(Route, { path: "/login", element: /* @__PURE__ */ import_react53.default.createElement(Login_default, null) }), /* @__PURE__ */ import_react53.default.createElement(Route, { path: "/logout", element: /* @__PURE__ */ import_react53.default.createElement(Logout_default, null) }), /* @__PURE__ */ import_react53.default.createElement(Route, { path: "/recipes", element: /* @__PURE__ */ import_react53.default.createElement(Recipes_default, null) }), /* @__PURE__ */ import_react53.default.createElement(Route, { path: "/recipe/:id", element: /* @__PURE__ */ import_react53.default.createElement(Recipe_default, null) }), /* @__PURE__ */ import_react53.default.createElement(Route, { path: "/recipe", element: /* @__PURE__ */ import_react53.default.createElement(NewRecipe_default, null) })));
+  var routes_default = /* @__PURE__ */ import_react54.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react54.default.createElement(Routes, null, /* @__PURE__ */ import_react54.default.createElement(Route, { path: "/", exact: true, element: /* @__PURE__ */ import_react54.default.createElement(Home_default, null) }), /* @__PURE__ */ import_react54.default.createElement(Route, { path: "/products", element: /* @__PURE__ */ import_react54.default.createElement(Products_default, null) }), /* @__PURE__ */ import_react54.default.createElement(Route, { path: "/costumers", element: /* @__PURE__ */ import_react54.default.createElement(Costumers_default, null) }), /* @__PURE__ */ import_react54.default.createElement(Route, { path: "/about", element: /* @__PURE__ */ import_react54.default.createElement(About_default, null) }), /* @__PURE__ */ import_react54.default.createElement(Route, { path: "/contact", element: /* @__PURE__ */ import_react54.default.createElement(Contact_default, null) }), /* @__PURE__ */ import_react54.default.createElement(Route, { path: "/user", element: /* @__PURE__ */ import_react54.default.createElement(User_default, null) }), /* @__PURE__ */ import_react54.default.createElement(Route, { path: "/login", element: /* @__PURE__ */ import_react54.default.createElement(Login_default, null) }), /* @__PURE__ */ import_react54.default.createElement(Route, { path: "/logout", element: /* @__PURE__ */ import_react54.default.createElement(Logout_default, null) }), /* @__PURE__ */ import_react54.default.createElement(Route, { path: "/recipes", element: /* @__PURE__ */ import_react54.default.createElement(Recipes_default, null) }), /* @__PURE__ */ import_react54.default.createElement(Route, { path: "/recipe/:id", element: /* @__PURE__ */ import_react54.default.createElement(Recipe_default, null) }), /* @__PURE__ */ import_react54.default.createElement(Route, { path: "/recipe", element: /* @__PURE__ */ import_react54.default.createElement(NewRecipe_default, null) })));
 
   // app/javascript/components/App.jsx
-  var App_default = (props) => /* @__PURE__ */ import_react54.default.createElement(import_react54.default.Fragment, null, routes_default);
+  var App_default = (props) => /* @__PURE__ */ import_react55.default.createElement(import_react55.default.Fragment, null, routes_default);
 
   // app/javascript/components/index.jsx
   document.addEventListener("turbo:load", () => {
     const root = (0, import_client.createRoot)(
       document.body.appendChild(document.createElement("div"))
     );
-    root.render(/* @__PURE__ */ import_react55.default.createElement(App_default, null));
+    root.render(/* @__PURE__ */ import_react56.default.createElement(App_default, null));
   });
 })();
 /*! Bundled license information:
