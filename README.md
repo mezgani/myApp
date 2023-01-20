@@ -23,5 +23,5 @@ Things you may want to cover:
 
 * ...
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/mezgani/myApp/blob/main/myApp.png)
 
